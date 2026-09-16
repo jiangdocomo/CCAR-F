@@ -1486,7 +1486,7 @@ Claude 自己选一个看起来正确的
 [2]: https://ccar-f.17labs.ai/exam/?utm_source=chatgpt.com "How the CCA-F exam works: format, scoring, and what is not tested · CCAR-F"
 [3]: https://ccar-f.17labs.ai/study/?utm_source=chatgpt.com "CCA-F study guide — all 30 task statements · CCAR-F"
 [4]: https://ccar-f.17labs.ai/domains/1/?utm_source=chatgpt.com "Domain 1: Agentic Architecture & Orchestration · CCAR-F"
-[5]: https://docs.anthropic.com/ko/docs/agents-and-tools/tool-use/implement-tool-use?utm_source=chatgpt.com "도구 사용 구현 방법 - Anthropic"
+[5]: https://docs.anthropic.com/cn/docs/agents-and-tools/tool-use/implement-tool-use?utm_source=chatgpt.com "定义工具 - Anthropic"
 [6]: https://docs.anthropic.com/en/docs/claude-code/cli-usage?utm_source=chatgpt.com "CLI reference - Anthropic"
 [7]: https://ccar-f.17labs.ai/domains/2/?utm_source=chatgpt.com "Domain 2: Tool Design & MCP Integration · CCAR-F"
 [8]: https://docs.anthropic.com/en/docs/mcp?utm_source=chatgpt.com "Model Context Protocol (MCP) - Anthropic"
