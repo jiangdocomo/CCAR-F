@@ -69,10 +69,10 @@ However, engineers discover that most disputes require only two or three of thes
 
 Which architecture is MOST appropriate?
 
-A. A fixed sequential workflow executing every step
-B. An agentic loop in which Claude selects the next action dynamically
-C. A batch-processing pipeline
-D. Five independent agents that always execute in parallel
+A. A fixed sequential workflow executing every step.  
+B. An agentic loop in which Claude selects the next action dynamically. 
+C. A batch-processing pipeline. 
+D. Five independent agents that always execute in parallel. 
 
 **Correct Answer: B**
 
@@ -111,16 +111,16 @@ D 也不对。虽然 Parallel Agents 是 CCAR-F 高频知识点，但这里各�
 
 The coordinator needs to perform the following tasks after obtaining the complete transaction record:
 
-1. Analyze merchant risk history.
-2. Analyze the customer's historical spending pattern.
-3. Compare the two analyses and produce a final fraud-risk assessment.
+1. Analyze merchant risk history.  
+2. Analyze the customer's historical spending pattern.  
+3. Compare the two analyses and produce a final fraud-risk assessment.  
 
 Which TWO actions provide the best orchestration design?
 
-A. Run tasks 1 and 2 in parallel.
-B. Run tasks 1, 2, and 3 simultaneously.
-C. Wait for tasks 1 and 2 before starting task 3.
-D. Always run all subagents sequentially to preserve deterministic ordering.
+A. Run tasks 1 and 2 in parallel.  
+B. Run tasks 1, 2, and 3 simultaneously.  
+C. Wait for tasks 1 and 2 before starting task 3.  
+D. Always run all subagents sequentially to preserve deterministic ordering.  
 
 **Correct Answers: A and C**
 
