@@ -41,10 +41,10 @@ Every developer working in the repository should have Claude Code follow these i
 
 Where should these instructions MOST appropriately be maintained?
 
-**A.** Repeat them in every developer prompt.
-**B.** Store them in the project's `CLAUDE.md`.
-**C.** Put them only in one developer's personal configuration.
-**D.** Add them to every source file as comments.
+**A.** Repeat them in every developer prompt.  
+**B.** Store them in the project's `CLAUDE.md`.  
+**C.** Put them only in one developer's personal configuration.  
+**D.** Add them to every source file as comments.  
 
 ### Correct Answer: **B**
 
@@ -100,10 +100,10 @@ The team does **not** want all three sets of instructions loaded indiscriminatel
 
 What is the BEST design?
 
-**A.** Put every rule into one extremely large `CLAUDE.md`.
-**B.** Use path-specific rules associated with the relevant areas of the repository.
-**C.** Ask developers to manually paste the correct rules before each task.
-**D.** Create three separate repositories.
+**A.** Put every rule into one extremely large `CLAUDE.md`.  
+**B.** Use path-specific rules associated with the relevant areas of the repository.  
+**C.** Ask developers to manually paste the correct rules before each task.  
+**D.** Create three separate repositories.  
 
 ### Correct Answer: **B**
 
@@ -162,10 +162,10 @@ Several implementation strategies are possible.
 
 What should the developer do FIRST?
 
-**A.** Ask Claude Code to immediately modify all affected files.
-**B.** Use Plan Mode to explore the codebase and develop an implementation strategy before making changes.
-**C.** Ask Claude to change one random authentication file and infer the architecture afterward.
-**D.** Increase the model temperature before implementation.
+**A.** Ask Claude Code to immediately modify all affected files.  
+**B.** Use Plan Mode to explore the codebase and develop an implementation strategy before making changes.  
+**C.** Ask Claude to change one random authentication file and infer the architecture afterward.  
+**D.** Increase the model temperature before implementation.  
 
 ### Correct Answer: **B**
 
@@ -224,10 +224,10 @@ The team wants developers to invoke this process repeatedly without rewriting th
 
 Which approach is BEST?
 
-**A.** Create a reusable Skill/workflow containing the review procedure.
-**B.** Add the entire procedure to every developer's prompt manually.
-**C.** Put the procedure in comments inside every changed file.
-**D.** Depend on Claude to remember the procedure from previous unrelated sessions.
+**A.** Create a reusable Skill/workflow containing the review procedure.  
+**B.** Add the entire procedure to every developer's prompt manually.  
+**C.** Put the procedure in comments inside every changed file.  
+**D.** Depend on Claude to remember the procedure from previous unrelated sessions.  
 
 ### Correct Answer: **A**
 
@@ -279,10 +279,10 @@ Claude Code implements a backend change. The code compiles, but three unit tests
 
 What is the BEST next step?
 
-**A.** Discard the entire session and start over without showing Claude the failures.
-**B.** Provide the failing test output and ask Claude to diagnose and refine the implementation.
-**C.** Tell Claude only that “something is wrong.”
-**D.** Disable the failing tests so the implementation can be accepted.
+**A.** Discard the entire session and start over without showing Claude the failures.  
+**B.** Provide the failing test output and ask Claude to diagnose and refine the implementation.  
+**C.** Tell Claude only that “something is wrong.”  
+**D.** Disable the failing tests so the implementation can be accepted.  
 
 ### Correct Answer: **B**
 
@@ -337,10 +337,10 @@ Atlas wants its CI pipeline to automatically ask Claude Code to review a pull re
 
 Which execution style is MOST appropriate?
 
-**A.** Launch a normal interactive Claude Code session and wait for a human.
-**B.** Use Claude Code's non-interactive/headless execution mode suitable for automation.
-**C.** Store the review request in `CLAUDE.md` and assume CI will automatically execute it.
-**D.** Use Plan Mode only, because CI systems cannot run Claude actions.
+**A.** Launch a normal interactive Claude Code session and wait for a human.  
+**B.** Use Claude Code's non-interactive/headless execution mode suitable for automation.  
+**C.** Store the review request in `CLAUDE.md` and assume CI will automatically execute it.  
+**D.** Use Plan Mode only, because CI systems cannot run Claude actions.  
 
 ### Correct Answer: **B**
 
@@ -394,10 +394,10 @@ The main Claude Code session contains:
 
 What context should the security subagent receive?
 
-**A.** The complete session because more context always improves accuracy.
-**B.** Only the authentication diff, even if supporting security rules are required.
-**C.** The authentication diff plus the relevant security policies and architectural context needed for the review.
-**D.** No repository context; the subagent should rely entirely on general security knowledge.
+**A.** The complete session because more context always improves accuracy.  
+**B.** Only the authentication diff, even if supporting security rules are required.  
+**C.** The authentication diff plus the relevant security policies and architectural context needed for the review.  
+**D.** No repository context; the subagent should rely entirely on general security knowledge.  
 
 ### Correct Answer: **C**
 
@@ -454,10 +454,10 @@ The team discovers that the task can continue making changes for a long time wit
 
 Which design BEST improves reliability?
 
-**A.** Tell Claude, “Keep working until everything looks good.”
-**B.** Define explicit completion criteria, a bounded budget, verification checkpoints, and a stopping condition.
-**C.** Remove all verification steps because they consume tokens.
-**D.** Allow unlimited iterations because difficult migrations cannot have predefined safeguards.
+**A.** Tell Claude, “Keep working until everything looks good.”  
+**B.** Define explicit completion criteria, a bounded budget, verification checkpoints, and a stopping condition.  
+**C.** Remove all verification steps because they consume tokens.  
+**D.** Allow unlimited iterations because difficult migrations cannot have predefined safeguards.  
 
 ### Correct Answer: **B**
 

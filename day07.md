@@ -44,10 +44,10 @@ It needs to:
 
 What is the BEST execution strategy?
 
-**A.** Execute all three tasks simultaneously.
-**B.** Analyze logs first, then inspect source code, then compare them.
-**C.** Run log analysis and source-code inspection in parallel, then perform the comparison after both complete.
-**D.** Let the comparison agent begin first and request the other results later.
+**A.** Execute all three tasks simultaneously.  
+**B.** Analyze logs first, then inspect source code, then compare them.  
+**C.** Run log analysis and source-code inspection in parallel, then perform the comparison after both complete.  
+**D.** Let the comparison agent begin first and request the other results later.  
 
 ### Correct Answer: **C**
 
@@ -102,10 +102,10 @@ Both tools currently have this description:
 
 What should the engineering team do FIRST?
 
-**A.** Add “Think carefully before selecting tools” to the system prompt.
-**B.** Rewrite the tool descriptions to clearly define purpose, inputs, use cases, and non-use cases.
-**C.** Add a human approval step before every search operation.
-**D.** Force `search_logs` for every incident.
+**A.** Add “Think carefully before selecting tools” to the system prompt.  
+**B.** Rewrite the tool descriptions to clearly define purpose, inputs, use cases, and non-use cases.  
+**C.** Add a human approval step before every search operation.  
+**D.** Force `search_logs` for every incident.  
 
 ### Correct Answer: **B**
 
@@ -182,10 +182,10 @@ However, the `restart_service` tool must **never execute** unless the incident c
 
 Which implementation is BEST?
 
-**A.** Put “NEVER restart without approval” in the system prompt.
-**B.** Include ten few-shot examples where Claude waits for approval.
-**C.** Require the tool execution layer to verify a valid incident-commander approval before performing the restart.
-**D.** Ask Claude to report 100% confidence before restarting.
+**A.** Put “NEVER restart without approval” in the system prompt.  
+**B.** Include ten few-shot examples where Claude waits for approval.  
+**C.** Require the tool execution layer to verify a valid incident-commander approval before performing the restart.  
+**D.** Ask Claude to report 100% confidence before restarting.  
 
 ### Correct Answer: **C**
 
@@ -248,10 +248,10 @@ D 的 confidence 与 permission 没关系。
 
 Which TWO actions are MOST appropriate?
 
-**A.** Apply a bounded retry policy, respecting retry guidance where appropriate.
-**B.** Immediately escalate the entire incident to a human because any tool failure invalidates agent autonomy.
-**C.** If retries are exhausted, propagate structured failure context to the coordinator.
-**D.** Retry indefinitely because `retryable` guarantees eventual success.
+**A.** Apply a bounded retry policy, respecting retry guidance where appropriate.  
+**B.** Immediately escalate the entire incident to a human because any tool failure invalidates agent autonomy.  
+**C.** If retries are exhausted, propagate structured failure context to the coordinator.  
+**D.** Retry indefinitely because `retryable` guarantees eventual success.  
 
 ### Correct Answers: **A and C**
 
@@ -321,10 +321,10 @@ The response perfectly matches the JSON Schema.
 
 What is the MOST important additional control?
 
-**A.** No control is necessary because the schema passed.
-**B.** Semantic validation of relationships among the extracted/calculated values.
-**C.** A larger context window.
-**D.** Convert the JSON to natural-language prose before using it.
+**A.** No control is necessary because the schema passed.  
+**B.** Semantic validation of relationships among the extracted/calculated values.  
+**C.** A larger context window.  
+**D.** Convert the JSON to natural-language prose before using it.  
 
 ### Correct Answer: **B**
 
@@ -395,10 +395,10 @@ Claude starts referring to hypotheses that were already disproven.
 
 What is the BEST response?
 
-**A.** Keep everything because deleting context always reduces accuracy.
-**B.** Maintain verified findings in compact structured state while trimming or summarizing obsolete and low-value context.
-**C.** Repeat every verified fact after every tool call.
-**D.** Restart the investigation from zero.
+**A.** Keep everything because deleting context always reduces accuracy.  
+**B.** Maintain verified findings in compact structured state while trimming or summarizing obsolete and low-value context.  
+**C.** Repeat every verified fact after every tool call.  
+**D.** Restart the investigation from zero.  
 
 ### Correct Answer: **B**
 
@@ -466,10 +466,10 @@ It reports naming conventions, minor formatting problems, and low-risk warnings 
 
 What is the BEST first improvement?
 
-**A.** Provide explicit criteria defining which security findings are important and which findings should be excluded.
-**B.** Immediately add twenty few-shot examples.
-**C.** Increase the number of security agents.
-**D.** Increase output length.
+**A.** Provide explicit criteria defining which security findings are important and which findings should be excluded.  
+**B.** Immediately add twenty few-shot examples.  
+**C.** Increase the number of security agents.  
+**D.** Increase output length.  
 
 ### Correct Answer: **A**
 
@@ -541,10 +541,10 @@ Management asks the team to prove how the agent reached that conclusion.
 
 Which architecture BEST supports this requirement?
 
-**A.** Save only the final natural-language report.
-**B.** Track claims together with supporting evidence, source/tool result, and relevant timestamps.
-**C.** Ask Claude to regenerate an explanation after the incident.
-**D.** Increase the report's confidence score.
+**A.** Save only the final natural-language report.  
+**B.** Track claims together with supporting evidence, source/tool result, and relevant timestamps.  
+**C.** Ask Claude to regenerate an explanation after the incident.  
+**D.** Increase the report's confidence score.  
 
 ### Correct Answer: **B**
 
@@ -596,10 +596,10 @@ C 是事后让 Claude“回忆为什么”，不是可靠审计。
 
 Which TWO situations provide the STRONGEST reasons for the incident agent to escalate?
 
-**A.** One log-search request times out but reports `retryable=true`.
-**B.** Two authoritative sources remain materially contradictory after the defined resolution procedure.
-**C.** The system needs to perform an irreversible production action that policy requires a human to approve.
-**D.** Claude reports 88% confidence instead of the team's arbitrary 90% target.
+**A.** One log-search request times out but reports `retryable=true`.  
+**B.** Two authoritative sources remain materially contradictory after the defined resolution procedure.  
+**C.** The system needs to perform an irreversible production action that policy requires a human to approve.  
+**D.** Claude reports 88% confidence instead of the team's arbitrary 90% target.  
 
 ### Correct Answers: **B and C**
 
@@ -650,10 +650,10 @@ Apex observes the following failure:
 
 Which layer is MOST directly defective?
 
-**A.** Prompt engineering
-**B.** Tool-selection semantics
-**C.** Programmatic authorization/enforcement
-**D.** Context summarization
+**A.** Prompt engineering  
+**B.** Tool-selection semantics  
+**C.** Programmatic authorization/enforcement  
+**D.** Context summarization  
 
 ### Correct Answer: **C**
 

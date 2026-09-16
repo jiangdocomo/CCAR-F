@@ -49,10 +49,10 @@ The first three steps must never be skipped or reordered.
 
 Which architecture is BEST?
 
-**A.** Let `CoordinatorAgent` decide the order dynamically.
-**B.** Implement the first three steps as a deterministic workflow and begin the agentic investigation only after they succeed.
-**C.** Describe the preferred order in the system prompt.
-**D.** Execute all four steps concurrently.
+**A.** Let `CoordinatorAgent` decide the order dynamically.  
+**B.** Implement the first three steps as a deterministic workflow and begin the agentic investigation only after they succeed.  
+**C.** Describe the preferred order in the system prompt.  
+**D.** Execute all four steps concurrently.  
 
 ### Correct Answer: **B**
 
@@ -127,10 +127,10 @@ Claude frequently supplies irrelevant parameters and selects the wrong operation
 
 What is the BEST improvement?
 
-**A.** Increase the context window.
-**B.** Split the generic tool into semantically distinct tools with focused schemas and descriptions.
-**C.** Increase temperature so Claude explores more operation types.
-**D.** Add “Use `financial_operation` correctly” to `CLAUDE.md`.
+**A.** Increase the context window.  
+**B.** Split the generic tool into semantically distinct tools with focused schemas and descriptions.  
+**C.** Increase temperature so Claude explores more operation types.  
+**D.** Add “Use `financial_operation` correctly” to `CLAUDE.md`.  
 
 ### Correct Answer: **B**
 
@@ -202,10 +202,10 @@ Assume tasks 1 and 2 do not depend on each other.
 
 Which TWO statements are correct?
 
-**A.** Tasks 1 and 2 should generally run in parallel.
-**B.** Task 3 should begin before either investigation finishes.
-**C.** Task 3 should wait for the outputs required from tasks 1 and 2.
-**D.** All four tasks should always run concurrently to minimize latency.
+**A.** Tasks 1 and 2 should generally run in parallel.  
+**B.** Task 3 should begin before either investigation finishes.  
+**C.** Task 3 should wait for the outputs required from tasks 1 and 2.  
+**D.** All four tasks should always run concurrently to minimize latency.  
 
 ### Correct Answers: **A and C**
 
@@ -264,10 +264,10 @@ The agent retries and occasionally creates duplicate cases.
 
 What is the BEST architectural solution?
 
-**A.** Never retry state-changing tools.
-**B.** Make the operation idempotent, for example by using a stable idempotency/request key.
-**C.** Ask Claude whether it believes the first request succeeded.
-**D.** Increase the retry count.
+**A.** Never retry state-changing tools.  
+**B.** Make the operation idempotent, for example by using a stable idempotency/request key.  
+**C.** Ask Claude whether it believes the first request succeeded.  
+**D.** Increase the retry count.  
 
 ### Correct Answer: **B**
 
@@ -356,10 +356,10 @@ Tool failed.
 
 What is the MOST important problem?
 
-**A.** The error message is not long enough.
-**B.** Different failure classes require different recovery strategies, but the agent cannot distinguish them.
-**C.** Claude should never see tool errors.
-**D.** All failures should automatically be retried.
+**A.** The error message is not long enough.  
+**B.** Different failure classes require different recovery strategies, but the agent cannot distinguish them.  
+**C.** Claude should never see tool errors.  
+**D.** All failures should automatically be retried.  
 
 ### Correct Answer: **B**
 
@@ -418,10 +418,10 @@ The coordinator needs to continue reasoning for several hours.
 
 Which context-management strategy is BEST?
 
-**A.** Keep every raw token permanently in the active context.
-**B.** Remove all previous information and rely on Claude's general knowledge.
-**C.** Preserve verified findings and relevant policy state compactly while summarizing or externalizing bulky raw evidence that can be retrieved when needed.
-**D.** Repeat the 12 suspicious transactions after every message.
+**A.** Keep every raw token permanently in the active context.  
+**B.** Remove all previous information and rely on Claude's general knowledge.  
+**C.** Preserve verified findings and relevant policy state compactly while summarizing or externalizing bulky raw evidence that can be retrieved when needed.  
+**D.** Repeat the 12 suspicious transactions after every message.  
 
 ### Correct Answer: **C**
 
@@ -489,10 +489,10 @@ D 也是浪费 token。
 
 What is the BEST interpretation?
 
-**A.** The retrieved instruction should override the system prompt because it is more recent.
-**B.** Retrieved external content should be treated as untrusted data, not authoritative instructions controlling the agent.
-**C.** Claude should follow it if the page appears professional.
-**D.** The system should disable all retrieval capabilities permanently.
+**A.** The retrieved instruction should override the system prompt because it is more recent.  
+**B.** Retrieved external content should be treated as untrusted data, not authoritative instructions controlling the agent.  
+**C.** Claude should follow it if the page appears professional.  
+**D.** The system should disable all retrieval capabilities permanently.  
 
 ### Correct Answer: **B**
 
@@ -555,10 +555,10 @@ D 又属于过度反应。正确做法不是彻底禁止 retrieval，而是正�
 
 Which TWO controls provide the strongest **defense-in-depth** combination?
 
-**A.** Clearly instruct Claude when the tool is appropriate.
-**B.** Programmatically validate authorization and required approvals at execution time.
-**C.** Remove all application-level checks because Claude has already reasoned about the policy.
-**D.** Allow external retrieved documents to modify the approval rules.
+**A.** Clearly instruct Claude when the tool is appropriate.  
+**B.** Programmatically validate authorization and required approvals at execution time.  
+**C.** Remove all application-level checks because Claude has already reasoned about the policy.  
+**D.** Allow external retrieved documents to modify the approval rules.  
 
 ### Correct Answers: **A and B**
 
@@ -625,10 +625,10 @@ Orion wants stronger verification for high-impact cases.
 
 What is the BEST improvement?
 
-**A.** Ask “Are you really sure?” three more times.
-**B.** Use an independent review pass with the relevant evidence and evaluation criteria, reducing unnecessary anchoring on the original reasoning.
-**C.** Automatically accept the original answer if Claude reports confidence above 90%.
-**D.** Increase output length.
+**A.** Ask “Are you really sure?” three more times.  
+**B.** Use an independent review pass with the relevant evidence and evaluation criteria, reducing unnecessary anchoring on the original reasoning.  
+**C.** Automatically accept the original answer if Claude reports confidence above 90%.  
+**D.** Increase output length.  
 
 ### Correct Answer: **B**
 
@@ -701,10 +701,10 @@ Orion observes:
 
 Which layer should be improved MOST directly?
 
-**A.** Tool selection
-**B.** Authorization enforcement
-**C.** Provenance tracking
-**D.** Retry logic
+**A.** Tool selection  
+**B.** Authorization enforcement  
+**C.** Provenance tracking  
+**D.** Retry logic  
 
 ### Correct Answer: **C**
 

@@ -43,10 +43,10 @@ AtlasPay wants Claude Code to follow this convention:
 
 Where should this guidance MOST naturally be placed?
 
-**A.** In project instructions such as `CLAUDE.md` or an applicable project rule.
-**B.** In a production authorization service.
-**C.** In a database transaction constraint.
-**D.** In an idempotency key.
+**A.** In project instructions such as `CLAUDE.md` or an applicable project rule.  
+**B.** In a production authorization service.  
+**C.** In a database transaction constraint.  
+**D.** In an idempotency key.  
 
 ### Correct Answer: **A**
 
@@ -95,10 +95,10 @@ Developers currently place this sentence in `CLAUDE.md`, but Claude occasionally
 
 What is the BEST improvement?
 
-**A.** Repeat the instruction five times in `CLAUDE.md`.
-**B.** Use an appropriate Claude Code hook or deterministic automation to run the formatter when the relevant event occurs.
-**C.** Increase temperature.
-**D.** Ask Claude at the end whether it remembers the rule.
+**A.** Repeat the instruction five times in `CLAUDE.md`.  
+**B.** Use an appropriate Claude Code hook or deterministic automation to run the formatter when the relevant event occurs.  
+**C.** Increase temperature.  
+**D.** Ask Claude at the end whether it remembers the rule.  
 
 ### Correct Answer: **B**
 
@@ -159,10 +159,10 @@ AtlasPay considers adding a hook that runs the complete 45-minute integration-te
 
 What is the BEST assessment?
 
-**A.** Excellent; every possible validation should run after every event.
-**B.** The hook may be attached at the wrong granularity; choose an event and validation scope appropriate to the cost and purpose of the check.
-**C.** Hooks cannot run tests.
-**D.** Replace all testing with Claude self-review.
+**A.** Excellent; every possible validation should run after every event.  
+**B.** The hook may be attached at the wrong granularity; choose an event and validation scope appropriate to the cost and purpose of the check.  
+**C.** Hooks cannot run tests.  
+**D.** Replace all testing with Claude self-review.  
 
 ### Correct Answer: **B**
 
@@ -227,10 +227,10 @@ AtlasPay wants to prevent Claude Code from accidentally performing destructive d
 
 Which TWO controls provide the strongest layered protection?
 
-**A.** Tell Claude not to run destructive commands unless explicitly required.
-**B.** Restrict the credentials/environment so routine Claude Code sessions lack unnecessary destructive database permissions.
-**C.** Give Claude full database administrator access so it can recover from mistakes.
-**D.** Treat database permissions as unnecessary because Claude normally follows instructions.
+**A.** Tell Claude not to run destructive commands unless explicitly required.  
+**B.** Restrict the credentials/environment so routine Claude Code sessions lack unnecessary destructive database permissions.  
+**C.** Give Claude full database administrator access so it can recover from mistakes.  
+**D.** Treat database permissions as unnecessary because Claude normally follows instructions.  
 
 ### Correct Answers: **A and B**
 
@@ -293,10 +293,10 @@ Failure: tax was not applied
 
 Which next step is MOST effective?
 
-**A.** Retry the original implementation request without including the test result.
-**B.** Provide the concrete failing test result to Claude and ask it to diagnose and correct the implementation.
-**C.** Delete the failing test.
-**D.** Increase context by adding unrelated source files.
+**A.** Retry the original implementation request without including the test result.  
+**B.** Provide the concrete failing test result to Claude and ask it to diagnose and correct the implementation.  
+**C.** Delete the failing test.  
+**D.** Increase context by adding unrelated source files.  
 
 ### Correct Answer: **B**
 
@@ -352,10 +352,10 @@ Another engineer concludes:
 
 What is the BEST assessment?
 
-**A.** Correct; an interactive model/tool permission prompt replaces application authorization.
-**B.** Incorrect; development-time tool permissions and production business authorization solve different problems.
-**C.** Correct if `CLAUDE.md` also documents the rule.
-**D.** Correct if the model uses Plan Mode first.
+**A.** Correct; an interactive model/tool permission prompt replaces application authorization.  
+**B.** Incorrect; development-time tool permissions and production business authorization solve different problems.  
+**C.** Correct if `CLAUDE.md` also documents the rule.  
+**D.** Correct if the model uses Plan Mode first.  
 
 ### Correct Answer: **B**
 
@@ -412,10 +412,10 @@ Several migration strategies are possible.
 
 What should Claude Code do FIRST?
 
-**A.** Begin editing the first matching source file.
-**B.** Use Plan Mode to investigate dependencies and develop a migration approach before implementation.
-**C.** Increase temperature.
-**D.** Run the formatter.
+**A.** Begin editing the first matching source file.  
+**B.** Use Plan Mode to investigate dependencies and develop a migration approach before implementation.  
+**C.** Increase temperature.  
+**D.** Run the formatter.  
 
 ### Correct Answer: **B**
 
@@ -478,10 +478,10 @@ The main session contains:
 
 What context should the subagent receive?
 
-**A.** The entire session because maximum context always produces maximum accuracy.
-**B.** Only the migration filename.
-**C.** The migration diff plus the compatibility and safety context necessary to perform the bounded review.
-**D.** No project information.
+**A.** The entire session because maximum context always produces maximum accuracy.  
+**B.** Only the migration filename.  
+**C.** The migration diff plus the compatibility and safety context necessary to perform the bounded review.  
+**D.** No project information.  
 
 ### Correct Answer: **C**
 
@@ -546,10 +546,10 @@ The procedure is invoked on demand.
 
 Which TWO design choices are MOST appropriate?
 
-**A.** Package the repeatable procedure as a reusable Skill/workflow.
-**B.** Use deterministic test/lint automation where objective verification is available.
-**C.** Depend entirely on one developer remembering the procedure.
-**D.** Put every possible review result permanently into `CLAUDE.md`.
+**A.** Package the repeatable procedure as a reusable Skill/workflow.  
+**B.** Use deterministic test/lint automation where objective verification is available.  
+**C.** Depend entirely on one developer remembering the procedure.  
+**D.** Put every possible review result permanently into `CLAUDE.md`.  
 
 ### Correct Answers: **A and B**
 
@@ -629,10 +629,10 @@ AtlasPay observes:
 
 Which layer MOST directly failed?
 
-**A.** Plan Mode
-**B.** Coding style guidance
-**C.** Capability/permission boundary
-**D.** Few-shot prompting
+**A.** Plan Mode  
+**B.** Coding style guidance  
+**C.** Capability/permission boundary  
+**D.** Few-shot prompting  
 
 ### Correct Answer: **C**
 

@@ -70,9 +70,9 @@ However, engineers discover that most disputes require only two or three of thes
 Which architecture is MOST appropriate?
 
 A. A fixed sequential workflow executing every step.  
-B. An agentic loop in which Claude selects the next action dynamically. 
-C. A batch-processing pipeline. 
-D. Five independent agents that always execute in parallel. 
+B. An agentic loop in which Claude selects the next action dynamically.  
+C. A batch-processing pipeline.  
+D. Five independent agents that always execute in parallel.  
 
 **Correct Answer: B**
 
@@ -174,10 +174,10 @@ Company policy states:
 
 Which solution provides the STRONGEST guarantee?
 
-A. Add “Never issue refunds above $5,000 without approval” to the system prompt.
-B. Add three examples showing Claude that large refunds require approval.
-C. Programmatically prevent the refund tool from executing until a valid human approval is present.
-D. Ask Claude to verify its reasoning before issuing a large refund.
+A. Add “Never issue refunds above $5,000 without approval” to the system prompt.  
+B. Add three examples showing Claude that large refunds require approval.  
+C. Programmatically prevent the refund tool from executing until a valid human approval is present.  
+D. Ask Claude to verify its reasoning before issuing a large refund.  
 
 **Correct Answer: C**
 
@@ -226,10 +226,10 @@ The fraud system uses a coordinator agent and several specialist subagents.
 
 Which responsibility should PRIMARILY belong to the **coordinator**?
 
-A. Give every specialist the complete conversation history.
-B. Decompose the investigation, delegate bounded tasks, and synthesize the returned results.
-C. Allow specialist agents to freely create additional agents until consensus is reached.
-D. Require every specialist to independently produce the final customer response.
+A. Give every specialist the complete conversation history.  
+B. Decompose the investigation, delegate bounded tasks, and synthesize the returned results.  
+C. Allow specialist agents to freely create additional agents until consensus is reached.  
+D. Require every specialist to independently produce the final customer response.  
 
 **Correct Answer: B**
 
@@ -286,10 +286,10 @@ The main conversation contains 40 pages of unrelated customer-support history.
 
 What should the coordinator do?
 
-A. Pass the complete conversation so the subagent has maximum context.
-B. Pass only the information required for merchant analysis.
-C. Summarize all 40 pages and send the entire summary.
-D. Start a completely unrelated session without transaction information.
+A. Pass the complete conversation so the subagent has maximum context.  
+B. Pass only the information required for merchant analysis.  
+C. Summarize all 40 pages and send the entire summary.  
+D. Start a completely unrelated session without transaction information.  
 
 **Correct Answer: B**
 
@@ -335,10 +335,10 @@ retry_after: 5 seconds
 
 What is the BEST initial response?
 
-A. Immediately escalate the entire dispute to a human.
-B. Return “FAILED” to the coordinator with no additional information.
-C. Apply the defined retry policy and preserve structured error information if the retry ultimately fails.
-D. Ignore merchant-risk analysis and mark the transaction safe.
+A. Immediately escalate the entire dispute to a human.  
+B. Return “FAILED” to the coordinator with no additional information.  
+C. Apply the defined retry policy and preserve structured error information if the retry ultimately fails.  
+D. Ignore merchant-risk analysis and mark the transaction safe.  
 
 **Correct Answer: C**
 
@@ -394,10 +394,10 @@ Engineers are concerned that Claude might repeatedly alternate between two inves
 
 Which design is BEST?
 
-A. Terminate every agent after exactly five tool calls.
-B. Use normal semantic termination such as `end_turn`, with a maximum-iteration limit as a safety guard.
-C. Remove all tools after the first tool call.
-D. Ask Claude in the system prompt to “please avoid infinite loops.”
+A. Terminate every agent after exactly five tool calls.  
+B. Use normal semantic termination such as `end_turn`, with a maximum-iteration limit as a safety guard.  
+C. Remove all tools after the first tool call.  
+D. Ask Claude in the system prompt to “please avoid infinite loops.”  
 
 **Correct Answer: B**
 

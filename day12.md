@@ -47,10 +47,10 @@ The Engineering MCP server must expose:
 
 How should these MOST naturally be represented?
 
-**A.** Both as Resources
-**B.** Both as Tools
-**C.** Coding standards → Resource; `create_bug` → Tool
-**D.** Coding standards → Tool; `create_bug` → Resource
+**A.** Both as Resources  
+**B.** Both as Tools  
+**C.** Coding standards → Resource; `create_bug` → Tool  
+**D.** Coding standards → Tool; `create_bug` → Resource  
 
 ### Correct Answer: **C**
 
@@ -122,10 +122,10 @@ An engineer argues:
 
 What is the BEST response?
 
-**A.** Correct; MCP automatically guarantees authorization for every exposed operation.
-**B.** Incorrect; MCP standardizes integration, but application/system authorization must still protect sensitive operations.
-**C.** Correct, provided the MCP server uses detailed tool descriptions.
-**D.** Correct if Claude's confidence exceeds 95%.
+**A.** Correct; MCP automatically guarantees authorization for every exposed operation.  
+**B.** Incorrect; MCP standardizes integration, but application/system authorization must still protect sensitive operations.  
+**C.** Correct, provided the MCP server uses detailed tool descriptions.  
+**D.** Correct if Claude's confidence exceeds 95%.  
 
 ### Correct Answer: **B**
 
@@ -203,10 +203,10 @@ Most searches need only an employee ID and optional date range. Claude frequentl
 
 What is the BEST improvement?
 
-**A.** Add more parameters so Claude has greater flexibility.
-**B.** Simplify the schema, use appropriate types, and remove parameters unrelated to the tool's actual responsibility.
-**C.** Ask Claude to ignore unnecessary parameters.
-**D.** Increase temperature.
+**A.** Add more parameters so Claude has greater flexibility.  
+**B.** Simplify the schema, use appropriate types, and remove parameters unrelated to the tool's actual responsibility.  
+**C.** Ask Claude to ignore unnecessary parameters.  
+**D.** Increase temperature.  
 
 ### Correct Answer: **B**
 
@@ -265,10 +265,10 @@ C 又是在用 Prompt 补偿 API Design 问题。
 
 Which TWO design choices BEST follow secure capability design?
 
-**A.** Give the agent only the read/search capabilities needed for its task.
-**B.** Also expose `update_ticket` because Claude may find it convenient later.
-**C.** Treat retrieved customer text as potentially untrusted content rather than authoritative agent instructions.
-**D.** Allow customer records to override system instructions if they contain the phrase “SYSTEM MESSAGE.”
+**A.** Give the agent only the read/search capabilities needed for its task.  
+**B.** Also expose `update_ticket` because Claude may find it convenient later.  
+**C.** Treat retrieved customer text as potentially untrusted content rather than authoritative agent instructions.  
+**D.** Allow customer records to override system instructions if they contain the phrase “SYSTEM MESSAGE.”  
 
 ### Correct Answers: **A and C**
 
@@ -351,10 +351,10 @@ access_denied
 
 What is the BEST improvement?
 
-**A.** Return a longer natural-language apology.
-**B.** Return structured error information that distinguishes failure type and recovery-relevant properties.
-**C.** Automatically retry every error ten times.
-**D.** Hide all errors from Claude.
+**A.** Return a longer natural-language apology.  
+**B.** Return structured error information that distinguishes failure type and recovery-relevant properties.  
+**C.** Automatically retry every error ten times.  
+**D.** Hide all errors from Claude.  
 
 ### Correct Answer: **B**
 
@@ -425,10 +425,10 @@ which changed the approval threshold.
 
 What is the MOST direct architectural problem?
 
-**A.** Tool description ambiguity
-**B.** Resource freshness/version management
-**C.** Few-shot prompting
-**D.** Agent parallelization
+**A.** Tool description ambiguity  
+**B.** Resource freshness/version management  
+**C.** Few-shot prompting  
+**D.** Agent parallelization  
 
 ### Correct Answer: **B**
 
@@ -490,10 +490,10 @@ Steps 1–3 have deterministic rules.
 
 Which design is BEST?
 
-**A.** Ask Claude to reason through all four steps and decide whether each one is necessary.
-**B.** Enforce steps 1–3 deterministically and permit submission only after their required conditions succeed.
-**C.** Ask four agents to vote on whether the reimbursement should proceed.
-**D.** Put the rules only in the tool description.
+**A.** Ask Claude to reason through all four steps and decide whether each one is necessary.  
+**B.** Enforce steps 1–3 deterministically and permit submission only after their required conditions succeed.  
+**C.** Ask four agents to vote on whether the reimbursement should proceed.  
+**D.** Put the rules only in the tool description.  
 
 ### Correct Answer: **B**
 
@@ -549,10 +549,10 @@ A network timeout occurs immediately after the request is sent.
 
 Which TWO concerns are MOST important before retrying?
 
-**A.** Whether the operation supports idempotency or a stable request key.
-**B.** Whether the resulting external state can be checked to determine whether the first request succeeded.
-**C.** Whether Claude can generate a longer explanation.
-**D.** Whether the tool description contains at least 200 words.
+**A.** Whether the operation supports idempotency or a stable request key.  
+**B.** Whether the resulting external state can be checked to determine whether the first request succeeded.  
+**C.** Whether Claude can generate a longer explanation.  
+**D.** Whether the tool description contains at least 200 words.  
 
 ### Correct Answers: **A and B**
 
@@ -624,10 +624,10 @@ Every agent would connect to the same server and rely on prompts to avoid inappr
 
 What is the STRONGEST concern?
 
-**A.** MCP servers cannot expose more than five tools.
-**B.** The design creates overly broad trust and capability boundaries, making least-privilege enforcement more difficult.
-**C.** Claude cannot use tools from different business domains.
-**D.** MCP requires one server per individual tool.
+**A.** MCP servers cannot expose more than five tools.  
+**B.** The design creates overly broad trust and capability boundaries, making least-privilege enforcement more difficult.  
+**C.** Claude cannot use tools from different business domains.  
+**D.** MCP requires one server per individual tool.  
 
 ### Correct Answer: **B**
 
@@ -691,10 +691,10 @@ Horizon observes:
 
 Which layer MOST directly failed?
 
-**A.** Tool selection
-**B.** Authorization
-**C.** Provenance/audit-state tracking
-**D.** Tool schema design
+**A.** Tool selection  
+**B.** Authorization  
+**C.** Provenance/audit-state tracking  
+**D.** Tool schema design  
 
 ### Correct Answer: **C**
 

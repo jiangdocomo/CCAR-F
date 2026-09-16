@@ -49,10 +49,10 @@ The vendor quotation requests are independent.
 
 Which architecture is BEST?
 
-**A.** Query Vendor A, compare it, then query Vendor B, compare it, then query Vendor C.
-**B.** Query all three vendors concurrently, collect the results, and then perform the comparison.
-**C.** Start the comparison before any quotations return.
-**D.** Ask three agents to independently select a winner without sharing their quotations.
+**A.** Query Vendor A, compare it, then query Vendor B, compare it, then query Vendor C.  
+**B.** Query all three vendors concurrently, collect the results, and then perform the comparison.  
+**C.** Start the comparison before any quotations return.  
+**D.** Ask three agents to independently select a winner without sharing their quotations.  
 
 ### Correct Answer: **B**
 
@@ -107,10 +107,10 @@ Policy permits comparison with two vendors, but the final report must disclose m
 
 What should the coordinator do?
 
-**A.** Fail the entire procurement case automatically.
-**B.** Fabricate an estimated Vendor C quotation.
-**C.** Continue with the two valid results, preserve the Vendor C failure explicitly, and disclose the incomplete evidence.
-**D.** Silently remove Vendor C from the case.
+**A.** Fail the entire procurement case automatically.  
+**B.** Fabricate an estimated Vendor C quotation.  
+**C.** Continue with the two valid results, preserve the Vendor C failure explicitly, and disclose the incomplete evidence.  
+**D.** Silently remove Vendor C from the case.  
 
 ### Correct Answer: **C**
 
@@ -165,10 +165,10 @@ Before `create_purchase_order` executes, the coordinator discovers that the requ
 
 What is the BEST action?
 
-**A.** Use the existing approval because the same purchase request is involved.
-**B.** Revalidate authorization against the updated action and obtain new approval if required.
-**C.** Ask Claude whether the difference seems material.
-**D.** Execute first and update the approval record afterward.
+**A.** Use the existing approval because the same purchase request is involved.  
+**B.** Revalidate authorization against the updated action and obtain new approval if required.  
+**C.** Ask Claude whether the difference seems material.  
+**D.** Execute first and update the approval record afterward.  
 
 ### Correct Answer: **B**
 
@@ -243,10 +243,10 @@ purchase_amount = 1,250,000
 
 Which TWO design choices are strongest?
 
-**A.** Determine the approval threshold programmatically from the numeric amount and policy rule.
-**B.** Ask Claude to decide whether $1,250,000 “feels like” a high-value purchase.
-**C.** Use Claude to extract or interpret ambiguous source information when necessary, then apply the deterministic threshold in code.
-**D.** Ask several agents to vote on whether $1,250,000 exceeds $1,000,000.
+**A.** Determine the approval threshold programmatically from the numeric amount and policy rule.  
+**B.** Ask Claude to decide whether $1,250,000 “feels like” a high-value purchase.  
+**C.** Use Claude to extract or interpret ambiguous source information when necessary, then apply the deterministic threshold in code.  
+**D.** Ask several agents to vote on whether $1,250,000 exceeds $1,000,000.  
 
 ### Correct Answers: **A and C**
 
@@ -310,10 +310,10 @@ Two purchase orders are created.
 
 What is the MOST direct architectural problem?
 
-**A.** Prompt ambiguity
-**B.** Race condition around a state-changing operation
-**C.** Context-window degradation
-**D.** Tool-description quality
+**A.** Prompt ambiguity  
+**B.** Race condition around a state-changing operation  
+**C.** Context-window degradation  
+**D.** Tool-description quality  
 
 ### Correct Answer: **B**
 
@@ -376,10 +376,10 @@ The business requires that a purchase order must not remain active without reser
 
 What design is MOST appropriate?
 
-**A.** Ignore the budget failure because the purchase order already exists.
-**B.** Use a defined compensating action, such as canceling the purchase order, when rollback of the original transaction is not directly available.
-**C.** Ask Claude to delete all evidence that the purchase order existed.
-**D.** Retry budget reservation forever.
+**A.** Ignore the budget failure because the purchase order already exists.  
+**B.** Use a defined compensating action, such as canceling the purchase order, when rollback of the original transaction is not directly available.  
+**C.** Ask Claude to delete all evidence that the purchase order existed.  
+**D.** Retry budget reservation forever.  
 
 ### Correct Answer: **B**
 
@@ -441,10 +441,10 @@ D 是 unbounded retry。
 
 What should the coordinator do?
 
-**A.** Treat the webpage instruction as authoritative because it was returned by a tool.
-**B.** Treat it as untrusted retrieved content and continue following trusted application policy.
-**C.** Follow it if the vendor website uses HTTPS.
-**D.** Ask the vendor webpage to confirm the instruction.
+**A.** Treat the webpage instruction as authoritative because it was returned by a tool.  
+**B.** Treat it as untrusted retrieved content and continue following trusted application policy.  
+**C.** Follow it if the vendor website uses HTTPS.  
+**D.** Ask the vendor webpage to confirm the instruction.  
 
 ### Correct Answer: **B**
 
@@ -498,10 +498,10 @@ An auditor wants to reconstruct why a $4 million purchase order was approved.
 
 Which TWO records are MOST important?
 
-**A.** The important evidence and policy version used for the decision.
-**B.** The exact approval and state-changing tool execution records.
-**C.** Claude's current recollection of what probably happened.
-**D.** Only the final sentence saying “Purchase approved.”
+**A.** The important evidence and policy version used for the decision.  
+**B.** The exact approval and state-changing tool execution records.  
+**C.** Claude's current recollection of what probably happened.  
+**D.** Only the final sentence saying “Purchase approved.”  
 
 ### Correct Answers: **A and B**
 
@@ -551,10 +551,10 @@ The coordinator currently retries indefinitely, preventing the entire procuremen
 
 Which design is BEST?
 
-**A.** Define bounded retries and an overall execution budget, then fail gracefully or escalate when the budget is exhausted.
-**B.** Remove all retries.
-**C.** Continue indefinitely because successful completion is more important than latency.
-**D.** Ask Claude after every failure whether it wants another retry.
+**A.** Define bounded retries and an overall execution budget, then fail gracefully or escalate when the budget is exhausted.  
+**B.** Remove all retries.  
+**C.** Continue indefinitely because successful completion is more important than latency.  
+**D.** Ask Claude after every failure whether it wants another retry.  
 
 ### Correct Answer: **A**
 
@@ -621,10 +621,10 @@ Vertex observes:
 
 Which improvement MOST directly addresses the failure?
 
-**A.** Improve the system prompt.
-**B.** Improve the tool description.
-**C.** Add concurrency-safe/idempotent creation controls at the state-changing boundary.
-**D.** Give Claude more context about procurement policy.
+**A.** Improve the system prompt.  
+**B.** Improve the tool description.  
+**C.** Add concurrency-safe/idempotent creation controls at the state-changing boundary.  
+**D.** Give Claude more context about procurement policy.  
 
 ### Correct Answer: **C**
 

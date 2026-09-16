@@ -45,10 +45,10 @@ Some tools are read-only. Others modify production systems.
 
 What is the BEST design?
 
-**A.** Keep all permissions because the system prompt tells `LogAgent` not to misuse them.
-**B.** Give `LogAgent` only the permissions required for log investigation.
-**C.** Keep all permissions but ask Claude for confirmation before using dangerous operations.
-**D.** Give every subagent identical permissions to simplify configuration.
+**A.** Keep all permissions because the system prompt tells `LogAgent` not to misuse them.  
+**B.** Give `LogAgent` only the permissions required for log investigation.  
+**C.** Keep all permissions but ask Claude for confirmation before using dangerous operations.  
+**D.** Give every subagent identical permissions to simplify configuration.  
 
 ### Correct Answer: **B**
 
@@ -107,10 +107,10 @@ Sentinel wants Claude to autonomously investigate incidents but requires stronge
 
 Which classification is MOST useful?
 
-**A.** Fast tools vs slow tools
-**B.** Short-description tools vs long-description tools
-**C.** Read-only/reversible operations vs state-changing/high-impact operations
-**D.** Tools used by Claude vs tools used by humans
+**A.** Fast tools vs slow tools  
+**B.** Short-description tools vs long-description tools  
+**C.** Read-only/reversible operations vs state-changing/high-impact operations  
+**D.** Tools used by Claude vs tools used by humans  
 
 ### Correct Answer: **C**
 
@@ -163,10 +163,10 @@ The agent continues using yesterday’s cached version.
 
 What is the MOST direct reliability problem?
 
-**A.** Tool granularity
-**B.** Stale context/data freshness
-**C.** Parallel execution
-**D.** Few-shot prompting
+**A.** Tool granularity  
+**B.** Stale context/data freshness  
+**C.** Parallel execution  
+**D.** Few-shot prompting  
 
 ### Correct Answer: **B**
 
@@ -226,10 +226,10 @@ Only 12 findings are currently relevant, but auditors may later need the origina
 
 What is the BEST approach?
 
-**A.** Keep all 50,000 lines permanently in active model context.
-**B.** Delete the report after summarization.
-**C.** Keep relevant findings in active structured state while retaining the full report externally for retrieval and audit.
-**D.** Ask Claude to memorize the entire report.
+**A.** Keep all 50,000 lines permanently in active model context.  
+**B.** Delete the report after summarization.  
+**C.** Keep relevant findings in active structured state while retaining the full report externally for retrieval and audit.  
+**D.** Ask Claude to memorize the entire report.  
 
 ### Correct Answer: **C**
 
@@ -283,10 +283,10 @@ Claude proposes changing a production database parameter.
 
 Which TWO controls are MOST appropriate before executing a high-impact change?
 
-**A.** Validate that the requested parameter and value satisfy allowed operational constraints.
-**B.** Verify any required human authorization at execution time.
-**C.** Trust the action automatically because `DatabaseAgent` generated it.
-**D.** Increase Claude’s temperature before execution.
+**A.** Validate that the requested parameter and value satisfy allowed operational constraints.  
+**B.** Verify any required human authorization at execution time.  
+**C.** Trust the action automatically because `DatabaseAgent` generated it.  
+**D.** Increase Claude’s temperature before execution.  
 
 ### Correct Answers: **A and B**
 
@@ -349,10 +349,10 @@ The system does not know whether the restart actually occurred.
 
 What should it do FIRST?
 
-**A.** Immediately send another restart request.
-**B.** Determine the resulting service state, or use an idempotent operation design, before blindly repeating the state-changing action.
-**C.** Assume the restart failed.
-**D.** Ask Claude to estimate whether the restart probably succeeded.
+**A.** Immediately send another restart request.  
+**B.** Determine the resulting service state, or use an idempotent operation design, before blindly repeating the state-changing action.  
+**C.** Assume the restart failed.  
+**D.** Ask Claude to estimate whether the restart probably succeeded.  
 
 ### Correct Answer: **B**
 
@@ -417,10 +417,10 @@ The content came from an external customer.
 
 Which design provides the STRONGEST protection?
 
-**A.** Tell Claude that customers are sometimes untrustworthy.
-**B.** Treat retrieved ticket content as untrusted data and ensure `SecurityAgent` lacks unnecessary database-modification permission.
-**C.** Allow the instruction because it appears inside a tool result.
-**D.** Ask Claude whether the instruction sounds malicious.
+**A.** Tell Claude that customers are sometimes untrustworthy.  
+**B.** Treat retrieved ticket content as untrusted data and ensure `SecurityAgent` lacks unnecessary database-modification permission.  
+**C.** Allow the instruction because it appears inside a tool result.  
+**D.** Ask Claude whether the instruction sounds malicious.  
 
 ### Correct Answer: **B**
 
@@ -476,10 +476,10 @@ Sentinel requires a human incident commander to approve production restarts.
 
 Where should the approval check occur?
 
-**A.** Only when the investigation begins.
-**B.** At or immediately before execution of the protected state-changing action.
-**C.** Only after the restart completes.
-**D.** Only inside Claude’s reasoning.
+**A.** Only when the investigation begins.  
+**B.** At or immediately before execution of the protected state-changing action.  
+**C.** Only after the restart completes.  
+**D.** Only inside Claude’s reasoning.  
 
 ### Correct Answer: **B**
 
@@ -532,10 +532,10 @@ A production remediation workflow requires both **high reliability** and **audit
 
 Which TWO practices contribute MOST directly?
 
-**A.** Record tool calls, results, approvals, and important evidence provenance.
-**B.** Define explicit validation and stopping conditions around autonomous execution.
-**C.** Remove logs after each action to minimize storage costs.
-**D.** Let Claude decide retrospectively what probably happened.
+**A.** Record tool calls, results, approvals, and important evidence provenance.  
+**B.** Define explicit validation and stopping conditions around autonomous execution.  
+**C.** Remove logs after each action to minimize storage costs.  
+**D.** Let Claude decide retrospectively what probably happened.  
 
 ### Correct Answers: **A and B**
 
@@ -598,10 +598,10 @@ Sentinel observes:
 
 What is the MOST direct problem?
 
-**A.** Authorization
-**B.** Tool selection
-**C.** State/context representation and event deduplication
-**D.** Tool description
+**A.** Authorization  
+**B.** Tool selection  
+**C.** State/context representation and event deduplication  
+**D.** Tool description  
 
 ### Correct Answer: **C**
 

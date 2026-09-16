@@ -47,10 +47,10 @@ Only after all three succeed may the AI-driven credit investigation begin.
 
 What is the BEST architecture?
 
-**A.** Let Claude dynamically decide whether to perform each compliance step.
-**B.** Implement the mandatory compliance sequence as a deterministic workflow, then start the agentic investigation.
-**C.** Ask three independent agents to perform the steps in any order.
-**D.** Put the required sequence in the system prompt and allow Claude to enforce it.
+**A.** Let Claude dynamically decide whether to perform each compliance step.  
+**B.** Implement the mandatory compliance sequence as a deterministic workflow, then start the agentic investigation.  
+**C.** Ask three independent agents to perform the steps in any order.  
+**D.** Put the required sequence in the system prompt and allow Claude to enforce it.  
 
 ### Correct Answer: **B**
 
@@ -113,10 +113,10 @@ Description: Search financial information.
 
 Which TWO changes are MOST likely to improve tool selection?
 
-**A.** Give each tool a precise description including when to use it and when not to use it.
-**B.** Clearly distinguish the input parameters and semantic boundaries of the two tools.
-**C.** Increase temperature so Claude explores both tools more often.
-**D.** Add “Always choose the correct financial tool” to the system prompt.
+**A.** Give each tool a precise description including when to use it and when not to use it.  
+**B.** Clearly distinguish the input parameters and semantic boundaries of the two tools.  
+**C.** Increase temperature so Claude explores both tools more often.  
+**D.** Add “Always choose the correct financial tool” to the system prompt.  
 
 ### Correct Answers: **A and B**
 
@@ -199,10 +199,10 @@ The current schema requires every field to contain a numeric value. Claude occas
 
 What is the BEST solution?
 
-**A.** Require `0` when employee count is absent.
-**B.** Allow `employee_count` to be null and distinguish missing information from a real numeric value.
-**C.** Ask Claude to estimate employee count from annual revenue.
-**D.** Remove structured output and return prose instead.
+**A.** Require `0` when employee count is absent.  
+**B.** Allow `employee_count` to be null and distinguish missing information from a real numeric value.  
+**C.** Ask Claude to estimate employee count from annual revenue.  
+**D.** Remove structured output and return prose instead.  
 
 ### Correct Answer: **B**
 
@@ -261,10 +261,10 @@ NovaBank policy states:
 
 Which design provides the STRONGEST guarantee?
 
-**A.** Put the rule at the top of the system prompt in capital letters.
-**B.** Add several examples showing that large loans require approval.
-**C.** Make `submit_loan_decision` reject approval unless two valid reviewer authorizations are present.
-**D.** Ask the coordinator to check its confidence before calling the tool.
+**A.** Put the rule at the top of the system prompt in capital letters.  
+**B.** Add several examples showing that large loans require approval.  
+**C.** Make `submit_loan_decision` reject approval unless two valid reviewer authorizations are present.  
+**D.** Ask the coordinator to check its confidence before calling the tool.  
 
 ### Correct Answer: **C**
 
@@ -327,10 +327,10 @@ It begins contradicting verified financial facts discovered earlier.
 
 What is the BEST improvement?
 
-**A.** Continue appending everything because more context always improves reasoning.
-**B.** Preserve verified facts in compact structured state and trim or summarize low-value context.
-**C.** Restart the investigation every hour and discard all previous findings.
-**D.** Repeat every important fact ten times near the end of the context.
+**A.** Continue appending everything because more context always improves reasoning.  
+**B.** Preserve verified facts in compact structured state and trim or summarize low-value context.  
+**C.** Restart the investigation every hour and discard all previous findings.  
+**D.** Repeat every important fact ten times near the end of the context.  
 
 ### Correct Answer: **B**
 
@@ -402,10 +402,10 @@ The final recommendation depends materially on the debt level.
 
 What should the system do?
 
-**A.** Ask Claude to choose whichever number seems more believable.
-**B.** Average the values to obtain $1.225B.
-**C.** Preserve both claims and their provenance, apply defined source-authority rules, and surface the conflict if it remains unresolved.
-**D.** Use the larger value because conservative lending is safer.
+**A.** Ask Claude to choose whichever number seems more believable.  
+**B.** Average the values to obtain $1.225B.  
+**C.** Preserve both claims and their provenance, apply defined source-authority rules, and surface the conflict if it remains unresolved.  
+**D.** Use the larger value because conservative lending is safer.  
 
 ### Correct Answer: **C**
 
@@ -475,10 +475,10 @@ A business-rule validator detects an inconsistency.
 
 What should happen NEXT?
 
-**A.** Accept the result because schema validation passed.
-**B.** Retry the identical original prompt without mentioning the problem.
-**C.** Return the specific inconsistency to the extraction process, request correction, and validate again.
-**D.** Remove the business-rule validator.
+**A.** Accept the result because schema validation passed.  
+**B.** Retry the identical original prompt without mentioning the problem.  
+**C.** Return the specific inconsistency to the extraction process, request correction, and validate again.  
+**D.** Remove the business-rule validator.  
 
 ### Correct Answer: **C**
 
@@ -546,10 +546,10 @@ B 的问题是 **blind retry**。
 
 Which TWO situations provide the STRONGEST reasons to escalate a NovaBank case to a human reviewer?
 
-**A.** A temporary API timeout occurs once and the tool reports that the error is retryable.
-**B.** Two authoritative sources remain materially inconsistent after the defined resolution procedure is exhausted.
-**C.** Claude reports 84% confidence while an arbitrary team target is 85%.
-**D.** Policy explicitly requires human approval for the requested high-risk decision.
+**A.** A temporary API timeout occurs once and the tool reports that the error is retryable.  
+**B.** Two authoritative sources remain materially inconsistent after the defined resolution procedure is exhausted.  
+**C.** Claude reports 84% confidence while an arbitrary team target is 85%.  
+**D.** Policy explicitly requires human approval for the requested high-risk decision.  
 
 ### Correct Answers: **B and D**
 

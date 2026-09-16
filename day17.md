@@ -51,10 +51,10 @@ refund_status = NOT_CREATED
 
 How should the evaluation score this case?
 
-**A.** Pass, because the final response clearly states that the refund succeeded.
-**B.** Pass if Claude's confidence was above 95%.
-**C.** Fail, because the required real-world/environment outcome did not occur.
-**D.** Pass if the agent called `process_refund` at least once.
+**A.** Pass, because the final response clearly states that the refund succeeded.  
+**B.** Pass if Claude's confidence was above 95%.  
+**C.** Fail, because the required real-world/environment outcome did not occur.  
+**D.** Pass if the agent called `process_refund` at least once.  
 
 ### Correct Answer: **C**
 
@@ -131,10 +131,10 @@ Production behavior changes substantially.
 
 What is the BEST explanation?
 
-**A.** Only the underlying model determines agent performance.
-**B.** The agent harness/scaffold is part of the system being evaluated and can materially affect behavior.
-**C.** Tool orchestration cannot affect model performance.
-**D.** The change proves the model itself was retrained.
+**A.** Only the underlying model determines agent performance.  
+**B.** The agent harness/scaffold is part of the system being evaluated and can materially affect behavior.  
+**C.** Tool orchestration cannot affect model performance.  
+**D.** The change proves the model itself was retrained.  
 
 ### Correct Answer: **B**
 
@@ -190,10 +190,10 @@ actual_refund = 100
 
 Which grader is BEST?
 
-**A.** An LLM judge asking whether the refund “seems reasonable.”
-**B.** A deterministic state/code check comparing the two numeric values.
-**C.** A customer-satisfaction survey.
-**D.** A second agent that votes on the refund.
+**A.** An LLM judge asking whether the refund “seems reasonable.”  
+**B.** A deterministic state/code check comparing the two numeric values.  
+**C.** A customer-satisfaction survey.  
+**D.** A second agent that votes on the refund.  
 
 ### Correct Answer: **B**
 
@@ -250,10 +250,10 @@ There is no single deterministic formula for these qualities.
 
 What is the MOST appropriate approach?
 
-**A.** Use a rubric-based model grader calibrated periodically against human judgment.
-**B.** Check whether the response contains the word “sorry.”
-**C.** Measure response length only.
-**D.** Use refund amount as the communication-quality metric.
+**A.** Use a rubric-based model grader calibrated periodically against human judgment.  
+**B.** Check whether the response contains the word “sorry.”  
+**C.** Measure response length only.  
+**D.** Use refund amount as the communication-quality metric.  
 
 ### Correct Answer: **A**
 
@@ -319,10 +319,10 @@ After optimization, the agent begins searching customer history for almost every
 
 Which TWO changes are MOST appropriate?
 
-**A.** Add cases where customer-history search is necessary.
-**B.** Add cases where customer-history search should not occur.
-**C.** Measure both under-triggering and over-triggering behavior.
-**D.** Increase the number of positive-only cases from 500 to 5,000.
+**A.** Add cases where customer-history search is necessary.  
+**B.** Add cases where customer-history search should not occur.  
+**C.** Measure both under-triggering and over-triggering behavior.  
+**D.** Increase the number of positive-only cases from 500 to 5,000.  
 
 ### Correct Answers: **B and C**
 
@@ -384,10 +384,10 @@ For this use case, Nova can generate several candidate solutions and succeeds if
 
 Which evaluation concept is MOST relevant?
 
-**A.** pass@k
-**B.** pass^k
-**C.** Precision
-**D.** Context utilization
+**A.** pass@k  
+**B.** pass^k  
+**C.** Precision  
+**D.** Context utilization  
 
 ### Correct Answer: **A**
 
@@ -445,10 +445,10 @@ Nova has another requirement:
 
 Which metric is MORE informative?
 
-**A.** pass@k only
-**B.** pass^k
-**C.** Maximum response length
-**D.** Number of available tools
+**A.** pass@k only  
+**B.** pass^k  
+**C.** Maximum response length  
+**D.** Number of available tools  
 
 ### Correct Answer: **B**
 
@@ -518,10 +518,10 @@ But previous trials leave refund records behind. Later trials therefore observe 
 
 What is the MOST direct problem?
 
-**A.** Insufficient prompt length
-**B.** Evaluation trials are not isolated, so shared state can contaminate results.
-**C.** Claude needs more tools.
-**D.** The evaluation needs a higher temperature.
+**A.** Insufficient prompt length  
+**B.** Evaluation trials are not isolated, so shared state can contaminate results.  
+**C.** Claude needs more tools.  
+**D.** The evaluation needs a higher temperature.  
 
 ### Correct Answer: **B**
 
@@ -588,10 +588,10 @@ Nova evaluates a refund workflow with these requirements:
 
 Which TWO statements are correct?
 
-**A.** Backend state and numeric policy limits are good candidates for deterministic/code-based graders.
-**B.** Communication quality is a reasonable candidate for a rubric-based model or human grader.
-**C.** One LLM judge should replace every other grader type.
-**D.** The final transcript alone is sufficient to verify all three requirements.
+**A.** Backend state and numeric policy limits are good candidates for deterministic/code-based graders.  
+**B.** Communication quality is a reasonable candidate for a rubric-based model or human grader.  
+**C.** One LLM judge should replace every other grader type.  
+**D.** The final transcript alone is sufficient to verify all three requirements.  
 
 ### Correct Answers: **A and B**
 
@@ -644,10 +644,10 @@ Nova observes:
 
 What should engineers fix FIRST?
 
-**A.** The Claude prompt
-**B.** The refund tool
-**C.** The evaluation specification/grader
-**D.** The context window
+**A.** The Claude prompt  
+**B.** The refund tool  
+**C.** The evaluation specification/grader  
+**D.** The context window  
 
 ### Correct Answer: **C**
 

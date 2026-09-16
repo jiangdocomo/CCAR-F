@@ -51,10 +51,10 @@ Production traffic, however, contains:
 
 What is the MOST important evaluation improvement?
 
-**A.** Increase the test set to 1,000 simple claims from the same product line.
-**B.** Build an evaluation set representative of important production distributions, edge cases, and failure modes.
-**C.** Run the same 100 claims ten times and average the result.
-**D.** Ask Claude whether 98% accuracy seems sufficient.
+**A.** Increase the test set to 1,000 simple claims from the same product line.  
+**B.** Build an evaluation set representative of important production distributions, edge cases, and failure modes.  
+**C.** Run the same 100 claims ten times and average the result.  
+**D.** Ask Claude whether 98% accuracy seems sufficient.  
 
 ### Correct Answer: **B**
 
@@ -109,10 +109,10 @@ Engineers need a stable set of claims with trusted expected outputs so that both
 
 What is this MOST naturally called?
 
-**A.** Retry budget
-**B.** Golden dataset
-**C.** Active context
-**D.** Compensating transaction
+**A.** Retry budget  
+**B.** Golden dataset  
+**C.** Active context  
+**D.** Compensating transaction  
 
 ### Correct Answer: **B**
 
@@ -166,10 +166,10 @@ Northstar is especially concerned about **missing genuinely fraudulent claims**,
 
 Which metric deserves particular attention?
 
-**A.** Recall for the fraudulent class
-**B.** Precision only
-**C.** Average response length
-**D.** Tool-call count
+**A.** Recall for the fraudulent class  
+**B.** Precision only  
+**C.** Average response length  
+**D.** Tool-call count  
 
 ### Correct Answer: **A**
 
@@ -238,10 +238,10 @@ Recall = TP / (TP + FN)
 
 Which TWO evaluation dimensions provide the strongest direct evidence that the extraction is suitable for downstream automation?
 
-**A.** Whether the output satisfies the required schema.
-**B.** Whether the extracted amount matches the source evidence correctly.
-**C.** Whether Claude uses sophisticated financial terminology.
-**D.** Whether the response contains more reasoning tokens.
+**A.** Whether the output satisfies the required schema.  
+**B.** Whether the extracted amount matches the source evidence correctly.  
+**C.** Whether Claude uses sophisticated financial terminology.  
+**D.** Whether the response contains more reasoning tokens.  
 
 ### Correct Answers: **A and B**
 
@@ -306,10 +306,10 @@ After deployment, engineers discover that accuracy on simple non-fraud claims dr
 
 Which practice would have MOST directly exposed this before deployment?
 
-**A.** Regression testing across previously successful evaluation cases.
-**B.** Increasing the context window.
-**C.** Adding more autonomous subagents.
-**D.** Increasing temperature.
+**A.** Regression testing across previously successful evaluation cases.  
+**B.** Increasing the context window.  
+**C.** Adding more autonomous subagents.  
+**D.** Increasing temperature.  
 
 ### Correct Answer: **A**
 
@@ -382,10 +382,10 @@ However, the complete claims system makes correct final decisions only **84%** o
 
 What is the BEST conclusion?
 
-**A.** The 84% result must be a measurement error because every agent exceeds 95%.
-**B.** Component-level evaluation is insufficient; the complete workflow also needs end-to-end evaluation.
-**C.** The system should average 97%, 98%, and 95%.
-**D.** Agent accuracy guarantees workflow accuracy.
+**A.** The 84% result must be a measurement error because every agent exceeds 95%.  
+**B.** Component-level evaluation is insufficient; the complete workflow also needs end-to-end evaluation.  
+**C.** The system should average 97%, 98%, and 95%.  
+**D.** Agent accuracy guarantees workflow accuracy.  
 
 ### Correct Answer: **B**
 
@@ -440,10 +440,10 @@ Both fields are already available as validated numeric values.
 
 What is the BEST evaluator?
 
-**A.** Ask another Claude instance whether the amount seems reasonable.
-**B.** Implement a deterministic programmatic check: `approved_amount <= policy_limit`.
-**C.** Ask three agents to vote.
-**D.** Use a longer evaluation prompt.
+**A.** Ask another Claude instance whether the amount seems reasonable.  
+**B.** Implement a deterministic programmatic check: `approved_amount <= policy_limit`.  
+**C.** Ask three agents to vote.  
+**D.** Use a longer evaluation prompt.  
 
 ### Correct Answer: **B**
 
@@ -500,10 +500,10 @@ There is no simple deterministic formula for overall summary quality.
 
 Which approach is MOST reasonable?
 
-**A.** Use a clearly defined rubric and an evaluator model, ideally calibrated against human judgments.
-**B.** Count characters only.
-**C.** Treat valid JSON as proof of summary quality.
-**D.** Use production approval rate as the only metric.
+**A.** Use a clearly defined rubric and an evaluator model, ideally calibrated against human judgments.  
+**B.** Count characters only.  
+**C.** Treat valid JSON as proof of summary quality.  
+**D.** Use production approval rate as the only metric.  
 
 ### Correct Answer: **A**
 
@@ -569,10 +569,10 @@ The system performs well on the pre-deployment evaluation set.
 
 Which TWO practices remain important after deployment?
 
-**A.** Monitor production outcomes and failure patterns for distribution shift or new failure modes.
-**B.** Feed important newly discovered failures back into the evaluation/regression suite.
-**C.** Stop evaluating because pre-deployment tests already passed.
-**D.** Automatically treat every production response as correct.
+**A.** Monitor production outcomes and failure patterns for distribution shift or new failure modes.  
+**B.** Feed important newly discovered failures back into the evaluation/regression suite.  
+**C.** Stop evaluating because pre-deployment tests already passed.  
+**D.** Automatically treat every production response as correct.  
 
 ### Correct Answers: **A and B**
 
@@ -642,10 +642,10 @@ After the change:
 
 What should engineers do NEXT?
 
-**A.** Assume the prompt is better because its component accuracy improved.
-**B.** Compare end-to-end evaluation results and inspect how the changed extraction behavior affects downstream agents and decision logic.
-**C.** Immediately increase temperature.
-**D.** Remove end-to-end tests because they conflict with the component metric.
+**A.** Assume the prompt is better because its component accuracy improved.  
+**B.** Compare end-to-end evaluation results and inspect how the changed extraction behavior affects downstream agents and decision logic.  
+**C.** Immediately increase temperature.  
+**D.** Remove end-to-end tests because they conflict with the component metric.  
 
 ### Correct Answer: **B**
 

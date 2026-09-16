@@ -49,10 +49,10 @@ Engineers observe increased token usage and slower processing.
 
 What is the BEST architectural improvement?
 
-**A.** Remove tool descriptions so all 1,200 definitions become shorter.
-**B.** Use tool discovery/search so Claude loads detailed definitions only for tools relevant to the current task.
-**C.** Increase the context window and continue loading everything.
-**D.** Randomly expose 100 tools on each request.
+**A.** Remove tool descriptions so all 1,200 definitions become shorter.  
+**B.** Use tool discovery/search so Claude loads detailed definitions only for tools relevant to the current task.  
+**C.** Increase the context window and continue loading everything.  
+**D.** Randomly expose 100 tools on each request.  
 
 ### Correct Answer: **B**
 
@@ -139,10 +139,10 @@ The current architecture performs a separate natural-language model turn for eve
 
 What is the BEST optimization?
 
-**A.** Ask Claude to produce longer explanations for each invoice.
-**B.** Use programmatic tool calling/code execution to perform the repetitive loop and filtering, returning only relevant exceptions to the model.
-**C.** Create 500 permanent subagents.
-**D.** Put all 500 full invoice results into the system prompt.
+**A.** Ask Claude to produce longer explanations for each invoice.  
+**B.** Use programmatic tool calling/code execution to perform the repetitive loop and filtering, returning only relevant exceptions to the model.  
+**C.** Create 500 permanent subagents.  
+**D.** Put all 500 full invoice results into the system prompt.  
 
 ### Correct Answer: **B**
 
@@ -227,10 +227,10 @@ The sequence and conditions are completely known in advance.
 
 Which architecture is BEST?
 
-**A.** A fully autonomous agent that decides what step to perform next.
-**B.** A deterministic workflow, using Claude only where interpretation is actually needed.
-**C.** A team of four agents voting on every step.
-**D.** An open-ended research agent.
+**A.** A fully autonomous agent that decides what step to perform next.  
+**B.** A deterministic workflow, using Claude only where interpretation is actually needed.  
+**C.** A team of four agents voting on every step.  
+**D.** An open-ended research agent.  
 
 ### Correct Answer: **B**
 
@@ -290,10 +290,10 @@ Claude then says:
 
 What should determine whether the incident is actually resolved?
 
-**A.** Claude’s confidence score.
-**B.** Whether Claude used the phrase “recovered successfully.”
-**C.** Fresh environment evidence such as service health, logs, or monitoring results.
-**D.** Whether the restart tool was called.
+**A.** Claude’s confidence score.  
+**B.** Whether Claude used the phrase “recovered successfully.”  
+**C.** Fresh environment evidence such as service health, logs, or monitoring results.  
+**D.** Whether the restart tool was called.  
 
 ### Correct Answer: **C**
 
@@ -361,10 +361,10 @@ It currently has unrestricted credentials that can:
 
 Which TWO changes MOST directly reduce potential **blast radius**?
 
-**A.** Scope credentials to the systems and actions required for the agent’s role.
-**B.** Isolate dangerous execution capabilities behind stronger permission boundaries.
-**C.** Give Claude unrestricted access but add “BE CAREFUL” to the system prompt.
-**D.** Increase the context window so Claude better understands the consequences.
+**A.** Scope credentials to the systems and actions required for the agent’s role.  
+**B.** Isolate dangerous execution capabilities behind stronger permission boundaries.  
+**C.** Give Claude unrestricted access but add “BE CAREFUL” to the system prompt.  
+**D.** Increase the context window so Claude better understands the consequences.  
 
 ### Correct Answers: **A and B**
 
@@ -433,10 +433,10 @@ Claude may need to revisit small portions later.
 
 What is the BEST design?
 
-**A.** Keep all 300 MB permanently inside Claude’s active context.
-**B.** Store the logs externally and let Claude selectively retrieve relevant slices when needed.
-**C.** Delete the logs after the first summary.
-**D.** Repeat the complete logs after every agent handoff.
+**A.** Keep all 300 MB permanently inside Claude’s active context.  
+**B.** Store the logs externally and let Claude selectively retrieve relevant slices when needed.  
+**C.** Delete the logs after the first summary.  
+**D.** Repeat the complete logs after every agent handoff.  
 
 ### Correct Answer: **B**
 
@@ -489,10 +489,10 @@ A newer model no longer shows this behavior, but the resets now cause useful wor
 
 What should engineers do?
 
-**A.** Keep the reset forever because harness rules should never change.
-**B.** Re-evaluate the harness assumption and remove or modify the workaround if current evaluation shows it is no longer beneficial.
-**C.** Add resets every 20 turns instead.
-**D.** Solve the issue by increasing temperature.
+**A.** Keep the reset forever because harness rules should never change.  
+**B.** Re-evaluate the harness assumption and remove or modify the workaround if current evaluation shows it is no longer beneficial.  
+**C.** Add resets every 20 turns instead.  
+**D.** Solve the issue by increasing temperature.  
 
 ### Correct Answer: **B**
 
@@ -546,20 +546,20 @@ Evaluation
 A complex security investigation requires:
 
 ```text
-A. Analyze authentication logs
-B. Analyze network logs
-C. Analyze endpoint telemetry
-D. Synthesize the three analyses
+A. Analyze authentication logs  
+B. Analyze network logs  
+C. Analyze endpoint telemetry  
+D. Synthesize the three analyses  
 ```
 
 A, B, and C are independent.
 
 Which design BEST reduces latency while preserving correctness?
 
-**A.** Run A → B → C → D sequentially.
-**B.** Run A, B, and C in parallel, then run D after their required results are available.
-**C.** Run all four simultaneously.
-**D.** Run D first and let it predict the missing evidence.
+**A.** Run A → B → C → D sequentially.  
+**B.** Run A, B, and C in parallel, then run D after their required results are available.  
+**C.** Run all four simultaneously.  
+**D.** Run D first and let it predict the missing evidence.  
 
 ### Correct Answer: **B**
 
@@ -609,10 +609,10 @@ For each trial, engineers currently evaluate only the final natural-language res
 
 Which TWO additions would MOST improve the evaluation?
 
-**A.** Check the resulting environment state to determine whether remediation actually succeeded.
-**B.** Run representative trials multiple times to measure reliability under agent nondeterminism.
-**C.** Score responses only by length.
-**D.** Treat any tool invocation as proof of successful remediation.
+**A.** Check the resulting environment state to determine whether remediation actually succeeded.  
+**B.** Run representative trials multiple times to measure reliability under agent nondeterminism.  
+**C.** Score responses only by length.  
+**D.** Treat any tool invocation as proof of successful remediation.  
 
 ### Correct Answers: **A and B**
 
@@ -675,10 +675,10 @@ Aegis observes:
 
 Which layer MOST directly failed?
 
-**A.** Model reasoning
-**B.** Context engineering
-**C.** Execution-time authorization enforcement
-**D.** Tool discovery
+**A.** Model reasoning  
+**B.** Context engineering  
+**C.** Execution-time authorization enforcement  
+**D.** Tool discovery  
 
 ### Correct Answer: **C**
 

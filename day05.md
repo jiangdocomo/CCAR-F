@@ -47,10 +47,10 @@ The context window has **not** reached its maximum size.
 
 What is the MOST likely architectural issue?
 
-**A.** Context degradation caused by excessive irrelevant or low-value information.
-**B.** The model cannot reason about products.
-**C.** Claude requires a larger context window whenever more than ten tools are used.
-**D.** The original fact should have been repeated after every message.
+**A.** Context degradation caused by excessive irrelevant or low-value information.  
+**B.** The model cannot reason about products.  
+**C.** Claude requires a larger context window whenever more than ten tools are used.  
+**D.** The original fact should have been repeated after every message.  
 
 ### Correct Answer: **A**
 
@@ -113,10 +113,10 @@ These facts will be needed repeatedly during a long research session.
 
 What is the BEST way to preserve them?
 
-**A.** Depend entirely on the original conversation history.
-**B.** Maintain a compact structured state containing the important verified facts.
-**C.** Repeat every previous message before every model call.
-**D.** Store only the final answer and discard intermediate facts.
+**A.** Depend entirely on the original conversation history.  
+**B.** Maintain a compact structured state containing the important verified facts.  
+**C.** Repeat every previous message before every model call.  
+**D.** Store only the final answer and discard intermediate facts.  
 
 ### Correct Answer: **B**
 
@@ -179,10 +179,10 @@ The system cannot determine whether Claude obtained it from an earnings call, an
 
 What architectural improvement is MOST appropriate?
 
-**A.** Ask Claude to sound less confident.
-**B.** Track provenance linking important claims to their supporting sources and evidence.
-**C.** Increase the number of research subagents.
-**D.** Ask Claude to regenerate the entire report.
+**A.** Ask Claude to sound less confident.  
+**B.** Track provenance linking important claims to their supporting sources and evidence.  
+**C.** Increase the number of research subagents.  
+**D.** Ask Claude to regenerate the entire report.  
 
 ### Correct Answer: **B**
 
@@ -260,10 +260,10 @@ Claude currently selects $4.35 billion because it “looks more recent” and re
 
 What is the BEST approach?
 
-**A.** Always choose the larger value.
-**B.** Preserve both sources, identify the conflict, and resolve it using defined source-authority rules or explicitly report the uncertainty.
-**C.** Average the two values.
-**D.** Ask Claude to choose whichever value seems more plausible.
+**A.** Always choose the larger value.  
+**B.** Preserve both sources, identify the conflict, and resolve it using defined source-authority rules or explicitly report the uncertainty.  
+**C.** Average the two values.  
+**D.** Ask Claude to choose whichever value seems more plausible.  
 
 ### Correct Answer: **B**
 
@@ -332,13 +332,13 @@ The coordinator therefore does not know whether it should retry, use another sou
 
 Which response would BEST improve orchestration?
 
-**A.**
+**A.**  
 
 ```text
 FAILED AGAIN
 ```
 
-**B.**
+**B.**  
 
 ```json
 {
@@ -352,13 +352,13 @@ FAILED AGAIN
 }
 ```
 
-**C.**
+**C.**  
 
 ```text
 Sorry, something went wrong.
 ```
 
-**D.** Return a fabricated debt value so the coordinator can continue.
+**D.** Return a fabricated debt value so the coordinator can continue.  
 
 ### Correct Answer: **B**
 
@@ -414,10 +414,10 @@ Human reviewers complain that most escalated cases could have been resolved auto
 
 Which design is BEST?
 
-**A.** Escalate every case with any uncertainty.
-**B.** Define explicit escalation criteria based on risk, policy requirements, unresolved ambiguity, failed recovery, and user requests.
-**C.** Never escalate because Claude should remain autonomous.
-**D.** Lower the confidence threshold from 90% to 89%.
+**A.** Escalate every case with any uncertainty.  
+**B.** Define explicit escalation criteria based on risk, policy requirements, unresolved ambiguity, failed recovery, and user requests.  
+**C.** Never escalate because Claude should remain autonomous.  
+**D.** Lower the confidence threshold from 90% to 89%.  
 
 ### Correct Answer: **B**
 
@@ -477,10 +477,10 @@ Across 10,000 labeled examples, outputs assigned approximately 95% confidence ar
 
 What does this MOST strongly indicate?
 
-**A.** The model is well calibrated.
-**B.** The model is overconfident and its confidence estimates require calibration against observed outcomes.
-**C.** The model should simply report 100% confidence.
-**D.** Confidence scores automatically become accurate with more context.
+**A.** The model is well calibrated.  
+**B.** The model is overconfident and its confidence estimates require calibration against observed outcomes.  
+**C.** The model should simply report 100% confidence.  
+**D.** Confidence scores automatically become accurate with more context.  
 
 ### Correct Answer: **B**
 
@@ -564,10 +564,10 @@ The risk classification field determines whether a case receives enhanced human 
 
 What is the BEST conclusion?
 
-**A.** The system is production-ready because overall accuracy exceeds 95%.
-**B.** Overall accuracy hides a critical weak category; evaluate performance by field and operational risk before automating the decision.
-**C.** Delete the risk-classification field so overall accuracy increases.
-**D.** Average only company name and ticker accuracy.
+**A.** The system is production-ready because overall accuracy exceeds 95%.  
+**B.** Overall accuracy hides a critical weak category; evaluate performance by field and operational risk before automating the decision.  
+**C.** Delete the risk-classification field so overall accuracy increases.  
+**D.** Average only company name and ticker accuracy.  
 
 ### Correct Answer: **B**
 

@@ -53,10 +53,10 @@ payment_id = P-4831
 
 Which improvement is BEST?
 
-**A.** Pass the entire conversation transcript to `RiskAgent`.
-**B.** Pass a bounded handoff containing the objective, relevant verified facts, applicable policy criteria, and evidence references.
-**C.** Tell `RiskAgent` to search harder.
-**D.** Increase temperature so `RiskAgent` explores more possibilities.
+**A.** Pass the entire conversation transcript to `RiskAgent`.  
+**B.** Pass a bounded handoff containing the objective, relevant verified facts, applicable policy criteria, and evidence references.  
+**C.** Tell `RiskAgent` to search harder.  
+**D.** Increase temperature so `RiskAgent` explores more possibilities.  
 
 ### Correct Answer: **B**
 
@@ -124,10 +124,10 @@ cancel_payment
 
 What is the BEST security improvement?
 
-**A.** Keep every tool because Claude may need them unexpectedly.
-**B.** Remove unnecessary state-changing capabilities from the agent's accessible tool set.
-**C.** Keep all tools but describe `submit_payment` as “dangerous.”
-**D.** Ask Claude to promise not to use write tools.
+**A.** Keep every tool because Claude may need them unexpectedly.  
+**B.** Remove unnecessary state-changing capabilities from the agent's accessible tool set.  
+**C.** Keep all tools but describe `submit_payment` as “dangerous.”  
+**D.** Ask Claude to promise not to use write tools.  
 
 ### Correct Answer: **B**
 
@@ -182,10 +182,10 @@ D 更只是 behavioral instruction。
 
 What should the system MOST reasonably do?
 
-**A.** Retry immediately in a tight loop.
-**B.** Respect the retry guidance and use a bounded retry strategy.
-**C.** Permanently abandon the investigation.
-**D.** Change the counterparty ID before retrying.
+**A.** Retry immediately in a tight loop.  
+**B.** Respect the retry guidance and use a bounded retry strategy.  
+**C.** Permanently abandon the investigation.  
+**D.** Change the counterparty ID before retrying.  
 
 ### Correct Answer: **B**
 
@@ -260,10 +260,10 @@ The request reaches the payment service, but the network connection drops before
 
 Which TWO controls are MOST important before retrying?
 
-**A.** Use a stable idempotency key for the logical payment operation.
-**B.** Reconcile external payment state to determine whether the original operation succeeded.
-**C.** Assume a missing response means the payment failed.
-**D.** Increase Claude's confidence threshold.
+**A.** Use a stable idempotency key for the logical payment operation.  
+**B.** Reconcile external payment state to determine whether the original operation succeeded.  
+**C.** Assume a missing response means the payment failed.  
+**D.** Increase Claude's confidence threshold.  
 
 ### Correct Answers: **A and B**
 
@@ -345,10 +345,10 @@ Both fields have been validated.
 
 What should determine whether approval is required?
 
-**A.** Ask Claude to interpret the policy again.
-**B.** Implement the threshold/status rule deterministically over the validated fields.
-**C.** Ask three agents to vote.
-**D.** Use Claude's confidence score.
+**A.** Ask Claude to interpret the policy again.  
+**B.** Implement the threshold/status rule deterministically over the validated fields.  
+**C.** Ask three agents to vote.  
+**D.** Use Claude's confidence score.  
 
 ### Correct Answer: **B**
 
@@ -414,10 +414,10 @@ The coordinator begins reconsidering hypotheses that were already disproven.
 
 What is the BEST response?
 
-**A.** Keep everything active because deletion always reduces reasoning quality.
-**B.** Maintain verified findings and unresolved questions in compact structured state while pruning or externalizing obsolete working context.
-**C.** Restart the entire case from scratch.
-**D.** Repeat all verified findings after every message.
+**A.** Keep everything active because deletion always reduces reasoning quality.  
+**B.** Maintain verified findings and unresolved questions in compact structured state while pruning or externalizing obsolete working context.  
+**C.** Restart the entire case from scratch.  
+**D.** Repeat all verified findings after every message.  
 
 ### Correct Answer: **B**
 
@@ -480,10 +480,10 @@ The difference determines whether human approval was required.
 
 What should the system do?
 
-**A.** Average the values to $1,000,000.
-**B.** Use whichever source was retrieved first.
-**C.** Preserve both claims with provenance, apply explicit source-authority/reconciliation rules, and escalate unresolved material conflict when necessary.
-**D.** Ask Claude which number looks more plausible.
+**A.** Average the values to $1,000,000.  
+**B.** Use whichever source was retrieved first.  
+**C.** Preserve both claims with provenance, apply explicit source-authority/reconciliation rules, and escalate unresolved material conflict when necessary.  
+**D.** Ask Claude which number looks more plausible.  
 
 ### Correct Answer: **C**
 
@@ -541,10 +541,10 @@ Helios wants stronger verification for high-value payments.
 
 Which approach is BEST?
 
-**A.** Ask `RiskAgent`, “Are you sure?” several times.
-**B.** Give an independent reviewer the necessary evidence and evaluation criteria and have it produce its own assessment before comparing results.
-**C.** Accept the answer whenever confidence exceeds 90%.
-**D.** Make the original explanation longer.
+**A.** Ask `RiskAgent`, “Are you sure?” several times.  
+**B.** Give an independent reviewer the necessary evidence and evaluation criteria and have it produce its own assessment before comparing results.  
+**C.** Accept the answer whenever confidence exceeds 90%.  
+**D.** Make the original explanation longer.  
 
 ### Correct Answer: **B**
 
@@ -621,10 +621,10 @@ High-value payments have substantially greater financial consequences.
 
 Which TWO conclusions are MOST appropriate?
 
-**A.** The aggregate improvement is insufficient evidence for deployment because a critical slice regressed materially.
-**B.** Evaluation should weight or separately track operationally important failure classes.
-**C.** Deploy immediately because 94% is greater than 90%.
-**D.** Ignore high-value cases because they are less frequent.
+**A.** The aggregate improvement is insufficient evidence for deployment because a critical slice regressed materially.  
+**B.** Evaluation should weight or separately track operationally important failure classes.  
+**C.** Deploy immediately because 94% is greater than 90%.  
+**D.** Ignore high-value cases because they are less frequent.  
 
 ### Correct Answers: **A and B**
 
@@ -685,10 +685,10 @@ Helios observes:
 
 Which layer MOST directly failed?
 
-**A.** Prompt engineering
-**B.** Tool description
-**C.** Authorization-state freshness / execution-time revalidation
-**D.** Context compression
+**A.** Prompt engineering  
+**B.** Tool description  
+**C.** Authorization-state freshness / execution-time revalidation  
+**D.** Context compression  
 
 ### Correct Answer: **C**
 

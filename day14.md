@@ -44,10 +44,10 @@ Meridian wants to reduce repeated processing cost without changing behavior.
 
 Which architecture is MOST appropriate?
 
-**A.** Randomly reorder all content on every request.
-**B.** Keep reusable stable content organized consistently so that caching can benefit repeated requests, while placing request-specific content separately.
-**C.** Duplicate the legal handbook several times inside every request.
-**D.** Replace the legal handbook with a one-sentence summary.
+**A.** Randomly reorder all content on every request.  
+**B.** Keep reusable stable content organized consistently so that caching can benefit repeated requests, while placing request-specific content separately.  
+**C.** Duplicate the legal handbook several times inside every request.  
+**D.** Replace the legal handbook with a one-sentence summary.  
 
 ### Correct Answer: **B**
 
@@ -100,10 +100,10 @@ For a typical contract, fewer than 10 opinions are relevant.
 
 What is the BEST design?
 
-**A.** Include all 20,000 pages in every request.
-**B.** Retrieve relevant opinions based on the current case and place only useful evidence into active context.
-**C.** Permanently summarize the entire archive into one paragraph.
-**D.** Ask Claude to answer from general legal knowledge instead.
+**A.** Include all 20,000 pages in every request.  
+**B.** Retrieve relevant opinions based on the current case and place only useful evidence into active context.  
+**C.** Permanently summarize the entire archive into one paragraph.  
+**D.** Ask Claude to answer from general legal knowledge instead.  
 
 ### Correct Answer: **B**
 
@@ -159,10 +159,10 @@ During a long review, `RiskAgent` accumulates:
 
 What should remain MOST salient in the agent's working state?
 
-**A.** Every raw token in chronological order.
-**B.** Verified findings, unresolved questions, current objective, and references allowing important evidence to be retrieved.
-**C.** Only the most recent message.
-**D.** All rejected hypotheses repeated after every tool call.
+**A.** Every raw token in chronological order.  
+**B.** Verified findings, unresolved questions, current objective, and references allowing important evidence to be retrieved.  
+**C.** Only the most recent message.  
+**D.** All rejected hypotheses repeated after every tool call.  
 
 ### Correct Answer: **B**
 
@@ -224,10 +224,10 @@ The company wants to balance quality, latency, and cost.
 
 What is the BEST general strategy?
 
-**A.** Always use the most capable and expensive configuration for every task.
-**B.** Use an appropriately capable lower-cost configuration for routine tasks and route genuinely difficult reasoning tasks to a more capable configuration when justified.
-**C.** Always use the cheapest configuration regardless of task complexity.
-**D.** Randomly select a configuration to avoid systematic bias.
+**A.** Always use the most capable and expensive configuration for every task.  
+**B.** Use an appropriately capable lower-cost configuration for routine tasks and route genuinely difficult reasoning tasks to a more capable configuration when justified.  
+**C.** Always use the cheapest configuration regardless of task complexity.  
+**D.** Randomly select a configuration to avoid systematic bias.  
 
 ### Correct Answer: **B**
 
@@ -284,10 +284,10 @@ Meridian wants to reduce cost and latency while preserving quality.
 
 Which TWO approaches are MOST defensible?
 
-**A.** Measure token usage, latency, and quality on representative workloads before optimizing.
-**B.** Use caching or retrieval strategically where large repeated or sparsely relevant context creates unnecessary processing.
-**C.** Remove all system instructions because they consume tokens.
-**D.** Disable validation because retries cost money.
+**A.** Measure token usage, latency, and quality on representative workloads before optimizing.  
+**B.** Use caching or retrieval strategically where large repeated or sparsely relevant context creates unnecessary processing.  
+**C.** Remove all system instructions because they consume tokens.  
+**D.** Disable validation because retries cost money.  
 
 ### Correct Answers: **A and B**
 
@@ -346,10 +346,10 @@ The actual contract says:
 
 Which statement BEST describes the failure?
 
-**A.** `RiskAgent` necessarily has a reasoning defect.
-**B.** An upstream extraction error propagated into downstream reasoning, demonstrating the need to evaluate interfaces and end-to-end behavior.
-**C.** The context window is necessarily too small.
-**D.** The system needs more parallel agents.
+**A.** `RiskAgent` necessarily has a reasoning defect.  
+**B.** An upstream extraction error propagated into downstream reasoning, demonstrating the need to evaluate interfaces and end-to-end behavior.  
+**C.** The context window is necessarily too small.  
+**D.** The system needs more parallel agents.  
 
 ### Correct Answer: **B**
 
@@ -413,10 +413,10 @@ Company policy states:
 
 What should determine whether escalation is required?
 
-**A.** A deterministic rule over the validated structured fields.
-**B.** A second Claude call asking whether escalation feels appropriate.
-**C.** Majority voting across five agents.
-**D.** The length of Claude's explanation.
+**A.** A deterministic rule over the validated structured fields.  
+**B.** A second Claude call asking whether escalation feels appropriate.  
+**C.** Majority voting across five agents.  
+**D.** The length of Claude's explanation.  
 
 ### Correct Answer: **A**
 
@@ -478,10 +478,10 @@ Research A and B are independent but currently execute sequentially.
 
 What should engineers investigate FIRST?
 
-**A.** Parallelizing independent research branches.
-**B.** Removing final synthesis.
-**C.** Eliminating policy retrieval.
-**D.** Increasing the number of sequential agents.
+**A.** Parallelizing independent research branches.  
+**B.** Removing final synthesis.  
+**C.** Eliminating policy retrieval.  
+**D.** Increasing the number of sequential agents.  
 
 ### Correct Answer: **A**
 
@@ -538,10 +538,10 @@ Meridian plans to route routine clauses to a cheaper model configuration.
 
 Which TWO evaluation practices are MOST important before rollout?
 
-**A.** Compare the cheaper route against trusted expected outcomes on representative routine and edge-case examples.
-**B.** Measure end-to-end quality, not only the routed component's local accuracy.
-**C.** Deploy immediately because lower cost proves architectural improvement.
-**D.** Evaluate only token cost because quality is unchanged by model routing.
+**A.** Compare the cheaper route against trusted expected outcomes on representative routine and edge-case examples.  
+**B.** Measure end-to-end quality, not only the routed component's local accuracy.  
+**C.** Deploy immediately because lower cost proves architectural improvement.  
+**D.** Evaluate only token cost because quality is unchanged by model routing.  
 
 ### Correct Answers: **A and B**
 
@@ -600,10 +600,10 @@ Meridian observes:
 
 Which improvement MOST directly addresses the defect?
 
-**A.** Increase Claude's temperature.
-**B.** Make the narrative explanation longer.
-**C.** Represent the escalation decision as a structured field or derive it deterministically from validated data instead of parsing free-form prose.
-**D.** Add another research agent.
+**A.** Increase Claude's temperature.  
+**B.** Make the narrative explanation longer.  
+**C.** Represent the escalation decision as a structured field or derive it deterministically from validated data instead of parsing free-form prose.  
+**D.** Add another research agent.  
 
 ### Correct Answer: **C**
 

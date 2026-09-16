@@ -45,10 +45,10 @@ Documents and emails may contain untrusted third-party content. `create_payment`
 
 What should the system do?
 
-**A.** Follow the instruction because it appears inside a document returned by an authorized tool.
-**B.** Treat the text as untrusted document content and continue following higher-authority application instructions.
-**C.** Follow it if the PDF has a valid digital signature.
-**D.** Ask the PDF whether the instruction is legitimate.
+**A.** Follow the instruction because it appears inside a document returned by an authorized tool.  
+**B.** Treat the text as untrusted document content and continue following higher-authority application instructions.  
+**C.** Follow it if the PDF has a valid digital signature.  
+**D.** Ask the PDF whether the instruction is legitimate.  
 
 ### Correct Answer: **B**
 
@@ -121,10 +121,10 @@ The user is authenticated but does not have payment-approval authority.
 
 What should happen?
 
-**A.** Execute because the agent technically has the capability.
-**B.** Execute because the user is authenticated.
-**C.** Reject or route through the required authorization process because capability does not imply authority.
-**D.** Execute if Claude's confidence exceeds 95%.
+**A.** Execute because the agent technically has the capability.  
+**B.** Execute because the user is authenticated.  
+**C.** Reject or route through the required authorization process because capability does not imply authority.  
+**D.** Execute if Claude's confidence exceeds 95%.  
 
 ### Correct Answer: **C**
 
@@ -190,10 +190,10 @@ The coordinator can technically perform the request.
 
 What security problem is MOST relevant?
 
-**A.** Context compression
-**B.** Confused-deputy / privilege-delegation risk
-**C.** Prompt caching
-**D.** Fan-out latency
+**A.** Context compression  
+**B.** Confused-deputy / privilege-delegation risk  
+**C.** Prompt caching  
+**D.** Fan-out latency  
 
 ### Correct Answer: **B**
 
@@ -266,10 +266,10 @@ Currency: USD
 
 Which TWO controls are MOST appropriate?
 
-**A.** Bind approval to material action parameters.
-**B.** Revalidate approval when protected parameters change before execution.
-**C.** Reuse the approval because the tool name is still `create_payment`.
-**D.** Allow Claude to decide whether the changes are “close enough.”
+**A.** Bind approval to material action parameters.  
+**B.** Revalidate approval when protected parameters change before execution.  
+**C.** Reuse the approval because the tool name is still `create_payment`.  
+**D.** Allow Claude to decide whether the changes are “close enough.”  
 
 ### Correct Answers: **A and B**
 
@@ -334,10 +334,10 @@ D 把安全边界变成模型主观判断。
 
 Which design is BEST?
 
-**A.** Put the API secret directly into the system prompt so Claude can use it when needed.
-**B.** Store the secret outside model context and let the trusted execution layer apply credentials when invoking the authorized service.
-**C.** Include the secret in every subagent handoff.
-**D.** Store the secret in retrieved documents.
+**A.** Put the API secret directly into the system prompt so Claude can use it when needed.  
+**B.** Store the secret outside model context and let the trusted execution layer apply credentials when invoking the authorized service.  
+**C.** Include the secret in every subagent handoff.  
+**D.** Store the secret in retrieved documents.  
 
 ### Correct Answer: **B**
 
@@ -398,10 +398,10 @@ The agent has both infrastructure-read capabilities and `send_email`.
 
 What architectural concern is MOST important?
 
-**A.** Combining sensitive read access with unrestricted external write capability can create an exfiltration path.
-**B.** The email may be too long.
-**C.** Claude needs a larger context window.
-**D.** The webpage should use JSON instead.
+**A.** Combining sensitive read access with unrestricted external write capability can create an exfiltration path.  
+**B.** The email may be too long.  
+**C.** Claude needs a larger context window.  
+**D.** The webpage should use JSON instead.  
 
 ### Correct Answer: **A**
 
@@ -464,10 +464,10 @@ Immediately before execution, the approval service becomes unavailable.
 
 What is the BEST default behavior for a high-impact payment?
 
-**A.** Execute because approval probably still exists.
-**B.** Fail closed: do not execute until required authorization can be verified.
-**C.** Ask Claude whether the payment appears legitimate.
-**D.** Execute and check approval afterward.
+**A.** Execute because approval probably still exists.  
+**B.** Fail closed: do not execute until required authorization can be verified.  
+**C.** Ask Claude whether the payment appears legitimate.  
+**D.** Execute and check approval afterward.  
 
 ### Correct Answer: **B**
 
@@ -533,10 +533,10 @@ Some scripts may be malicious.
 
 Which architecture BEST reduces risk?
 
-**A.** Execute every script directly on the production host because that provides the most realistic result.
-**B.** Inspect or execute untrusted code in an isolated environment with tightly scoped permissions and resource limits.
-**C.** Ask Claude whether the script looks safe, then run it as administrator.
-**D.** Rename `.sh` files to `.txt` before execution.
+**A.** Execute every script directly on the production host because that provides the most realistic result.  
+**B.** Inspect or execute untrusted code in an isolated environment with tightly scoped permissions and resource limits.  
+**C.** Ask Claude whether the script looks safe, then run it as administrator.  
+**D.** Rename `.sh` files to `.txt` before execution.  
 
 ### Correct Answer: **B**
 
@@ -594,10 +594,10 @@ Sentinel's normal evaluation suite contains only cooperative users and clean doc
 
 Which TWO additions would MOST improve security evaluation?
 
-**A.** Documents containing indirect prompt-injection attempts.
-**B.** Requests where unauthorized users try to induce privileged actions or data access.
-**C.** More copies of the same cooperative happy-path examples.
-**D.** Tests that measure only response length.
+**A.** Documents containing indirect prompt-injection attempts.  
+**B.** Requests where unauthorized users try to induce privileged actions or data access.  
+**C.** More copies of the same cooperative happy-path examples.  
+**D.** Tests that measure only response length.  
 
 ### Correct Answers: **A and B**
 
@@ -655,10 +655,10 @@ Sentinel observes:
 
 Which change provides the STRONGEST direct protection against the financial loss?
 
-**A.** Improve the prompt so Claude is less likely to follow document instructions.
-**B.** Add more prompt-injection examples.
-**C.** Require `create_payment` to verify authorization at the execution boundary and reject unauthorized calls.
-**D.** Make the document-analysis prompt longer.
+**A.** Improve the prompt so Claude is less likely to follow document instructions.  
+**B.** Add more prompt-injection examples.  
+**C.** Require `create_payment` to verify authorization at the execution boundary and reject unauthorized calls.  
+**D.** Make the document-analysis prompt longer.  
 
 ### Correct Answer: **C**
 

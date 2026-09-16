@@ -45,10 +45,10 @@ Claude frequently calls `search_products` when users ask about the status of an 
 
 What is the **BEST first improvement**?
 
-**A.** Increase the model temperature so Claude explores more tool choices.
-**B.** Add detailed descriptions explaining when each tool should and should not be used.
-**C.** Add a system prompt saying, “Always select the correct tool.”
-**D.** Merge both tools into one generic `search` tool.
+**A.** Increase the model temperature so Claude explores more tool choices.  
+**B.** Add detailed descriptions explaining when each tool should and should not be used.  
+**C.** Add a system prompt saying, “Always select the correct tool.”  
+**D.** Merge both tools into one generic `search` tool.  
 
 ### Correct Answer: **B**
 
@@ -110,10 +110,10 @@ The application should not allow Claude to choose another tool instead.
 
 Which configuration is MOST appropriate?
 
-**A.** `tool_choice = auto`
-**B.** `tool_choice = any`
-**C.** Force the specific `create_support_ticket` tool.
-**D.** Keep `tool_choice = auto` and write “You must create a ticket” in the prompt.
+**A.** `tool_choice = auto`  
+**B.** `tool_choice = any`  
+**C.** Force the specific `create_support_ticket` tool.  
+**D.** Keep `tool_choice = auto` and write “You must create a ticket” in the prompt.  
 
 ### Correct Answer: **C**
 
@@ -177,7 +177,7 @@ Claude often responds poorly because it cannot determine whether it should retry
 
 Which replacement is BEST?
 
-**A.**
+**A.**  
 
 ```json
 {
@@ -185,7 +185,7 @@ Which replacement is BEST?
 }
 ```
 
-**B.**
+**B.**  
 
 ```json
 {
@@ -193,7 +193,7 @@ Which replacement is BEST?
 }
 ```
 
-**C.**
+**C.**  
 
 ```json
 {
@@ -204,7 +204,7 @@ Which replacement is BEST?
 }
 ```
 
-**D.** Return an empty successful result.
+**D.** Return an empty successful result.  
 
 ### Correct Answer: **C**
 
@@ -271,10 +271,10 @@ Different AI applications need standardized access to these systems.
 
 What is the primary architectural value of **MCP**?
 
-**A.** MCP increases Claude's context window.
-**B.** MCP provides a standardized protocol for connecting AI applications with external tools and data sources.
-**C.** MCP automatically converts every deterministic workflow into an autonomous agent.
-**D.** MCP replaces authentication and authorization for enterprise systems.
+**A.** MCP increases Claude's context window.  
+**B.** MCP provides a standardized protocol for connecting AI applications with external tools and data sources.  
+**C.** MCP automatically converts every deterministic workflow into an autonomous agent.  
+**D.** MCP replaces authentication and authorization for enterprise systems.  
 
 ### Correct Answer: **B**
 
@@ -329,10 +329,10 @@ Northstar wants to expose two capabilities through MCP:
 
 How should these capabilities MOST naturally be modeled?
 
-**A.** Both should be Resources.
-**B.** Both should be Tools.
-**C.** Handbook → Resource; `create_support_ticket` → Tool.
-**D.** Handbook → Tool; `create_support_ticket` → Resource.
+**A.** Both should be Resources.  
+**B.** Both should be Tools.  
+**C.** Handbook → Resource; `create_support_ticket` → Tool.  
+**D.** Handbook → Tool; `create_support_ticket` → Resource.  
 
 ### Correct Answer: **C**
 
@@ -417,10 +417,10 @@ Only refunds up to the customer's authorized refund limit may be executed.
 
 Which architecture provides the **STRONGEST protection**?
 
-**A.** Describe the refund limit clearly in the tool description.
-**B.** Add several few-shot examples of unauthorized refunds.
-**C.** Validate authorization programmatically before the refund operation executes.
-**D.** Ask Claude to output its confidence score before issuing the refund.
+**A.** Describe the refund limit clearly in the tool description.  
+**B.** Add several few-shot examples of unauthorized refunds.  
+**C.** Validate authorization programmatically before the refund operation executes.  
+**D.** Ask Claude to output its confidence score before issuing the refund.  
 
 ### Correct Answer: **C**
 
@@ -496,10 +496,10 @@ The downstream parser frequently fails because Claude sometimes changes field na
 
 What is the BEST design?
 
-**A.** Add “Return valid JSON only” to the end of the prompt.
-**B.** Increase temperature to improve formatting diversity.
-**C.** Define the required structure using a schema/tool-based structured output mechanism and validate the result.
-**D.** Ask Claude to generate the response twice and select the longer one.
+**A.** Add “Return valid JSON only” to the end of the prompt.  
+**B.** Increase temperature to improve formatting diversity.  
+**C.** Define the required structure using a schema/tool-based structured output mechanism and validate the result.  
+**D.** Ask Claude to generate the response twice and select the longer one.  
 
 ### Correct Answer: **C**
 
@@ -576,10 +576,10 @@ The agent immediately retries indefinitely until the request succeeds.
 
 What is the MOST important architectural improvement?
 
-**A.** Replace structured errors with plain-English messages.
-**B.** Use a bounded retry policy with limits/backoff and propagate failure context if retries are exhausted.
-**C.** Escalate every timeout immediately to a human operator.
-**D.** Tell Claude in the system prompt not to retry too many times.
+**A.** Replace structured errors with plain-English messages.  
+**B.** Use a bounded retry policy with limits/backoff and propagate failure context if retries are exhausted.  
+**C.** Escalate every timeout immediately to a human operator.  
+**D.** Tell Claude in the system prompt not to retry too many times.  
 
 ### Correct Answer: **B**
 

@@ -52,10 +52,10 @@ At 09:30, Claude attempts to grant `ADMIN` access based on the state it read at 
 
 What is the BEST design?
 
-**A.** Execute because Claude already retrieved the state once.
-**B.** Revalidate relevant mutable state immediately before the high-impact write.
-**C.** Ask Claude whether 30 minutes seems stale.
-**D.** Put the 09:00 result into the system prompt.
+**A.** Execute because Claude already retrieved the state once.  
+**B.** Revalidate relevant mutable state immediately before the high-impact write.  
+**C.** Ask Claude whether 30 minutes seems stale.  
+**D.** Put the 09:00 result into the system prompt.  
 
 ### Correct Answer: **B**
 
@@ -131,10 +131,10 @@ Agent B then submits its update based on version 17.
 
 Which mechanism BEST prevents Agent B from silently overwriting Agent A's change?
 
-**A.** Require Agent B to submit the expected version and reject the update if the current version no longer matches.
-**B.** Tell both agents to work carefully.
-**C.** Let the last write always win.
-**D.** Increase model context.
+**A.** Require Agent B to submit the expected version and reject the update if the current version no longer matches.  
+**B.** Tell both agents to work carefully.  
+**C.** Let the last write always win.  
+**D.** Increase model context.  
 
 ### Correct Answer: **A**
 
@@ -205,10 +205,10 @@ The system currently restarts the entire investigation from step 1.
 
 What is the BEST improvement?
 
-**A.** Increase temperature so the restarted investigation finishes differently.
-**B.** Persist useful workflow state/checkpoints so execution can resume safely from an appropriate point.
-**C.** Disable crashes in the prompt.
-**D.** Put all 40 results into `CLAUDE.md`.
+**A.** Increase temperature so the restarted investigation finishes differently.  
+**B.** Persist useful workflow state/checkpoints so execution can resume safely from an appropriate point.  
+**C.** Disable crashes in the prompt.  
+**D.** Put all 40 results into `CLAUDE.md`.  
 
 ### Correct Answer: **B**
 
@@ -297,10 +297,10 @@ Instead, because of an upstream service bug, it returns:
 
 What should the agent system do?
 
-**A.** Let Claude infer the intended values and continue.
-**B.** Validate the tool result against the expected contract and treat invalid output as an integration/tool failure.
-**C.** Convert every value to a string.
-**D.** Assume `ACTVE` means `ACTIVE`.
+**A.** Let Claude infer the intended values and continue.  
+**B.** Validate the tool result against the expected contract and treat invalid output as an integration/tool failure.  
+**C.** Convert every value to a string.  
+**D.** Assume `ACTVE` means `ACTIVE`.  
 
 ### Correct Answer: **B**
 
@@ -370,10 +370,10 @@ The workflow resumes 12 hours later before executing `grant_access`.
 
 Which TWO checks are MOST important?
 
-**A.** Verify that mutable employee status and relevant policy state are still current.
-**B.** Verify that the approval remains valid for the exact action that will execute.
-**C.** Trust the checkpoint because persisted data cannot become stale.
-**D.** Skip all validation because resumption should be fast.
+**A.** Verify that mutable employee status and relevant policy state are still current.  
+**B.** Verify that the approval remains valid for the exact action that will execute.  
+**C.** Trust the checkpoint because persisted data cannot become stale.  
+**D.** Skip all validation because resumption should be fast.  
 
 ### Correct Answers: **A and B**
 
@@ -439,10 +439,10 @@ Policy explicitly allows the agent to continue for low-risk access requests if i
 
 What is the BEST behavior?
 
-**A.** Fail every request.
-**B.** Ignore the missing source silently.
-**C.** Continue low-risk requests with explicit degraded-state tracking, but fail or escalate privileged requests requiring complete evidence.
-**D.** Ask Claude to invent a likely device-risk score.
+**A.** Fail every request.  
+**B.** Ignore the missing source silently.  
+**C.** Continue low-risk requests with explicit degraded-state tracking, but fail or escalate privileged requests requiring complete evidence.  
+**D.** Ask Claude to invent a likely device-risk score.  
 
 ### Correct Answer: **C**
 
@@ -516,10 +516,10 @@ device_risk = LOW
 
 What should the agent do?
 
-**A.** Infer a new access policy from similar previous cases and grant access.
-**B.** Recognize that the case is outside its authorized decision boundary and escalate for human review.
-**C.** Choose the most permissive interpretation.
-**D.** Retry policy retrieval until a matching policy appears.
+**A.** Infer a new access policy from similar previous cases and grant access.  
+**B.** Recognize that the case is outside its authorized decision boundary and escalate for human review.  
+**C.** Choose the most permissive interpretation.  
+**D.** Retry policy retrieval until a matching policy appears.  
 
 ### Correct Answer: **B**
 
@@ -572,10 +572,10 @@ Six months after access was granted, an auditor asks:
 
 Which record is MOST useful?
 
-**A.** Only the final statement: “Access granted successfully.”
-**B.** A durable record linking the decision to relevant evidence, policy version, approval, requested action, and execution result.
-**C.** Claude's current reconstruction of what probably happened.
-**D.** The total number of tokens used.
+**A.** Only the final statement: “Access granted successfully.”  
+**B.** A durable record linking the decision to relevant evidence, policy version, approval, requested action, and execution result.  
+**C.** Claude's current reconstruction of what probably happened.  
+**D.** The total number of tokens used.  
 
 ### Correct Answer: **B**
 
@@ -628,10 +628,10 @@ Orion evaluates access-provisioning reliability.
 
 Which TWO test cases are especially important in addition to ordinary successful requests?
 
-**A.** Concurrent updates to the same employee's access.
-**B.** Workflow resumption after external state or policy has changed.
-**C.** Only cases where every dependency works perfectly.
-**D.** Only short cases that finish in one model turn.
+**A.** Concurrent updates to the same employee's access.  
+**B.** Workflow resumption after external state or policy has changed.  
+**C.** Only cases where every dependency works perfectly.  
+**D.** Only short cases that finish in one model turn.  
 
 ### Correct Answers: **A and B**
 
@@ -691,10 +691,10 @@ Orion observes:
 
 Which improvement MOST directly addresses the failure?
 
-**A.** Add more examples to the prompt.
-**B.** Increase Claude's reasoning effort.
-**C.** Add execution-time precondition/version checking to the state-changing operation.
-**D.** Make the tool description longer.
+**A.** Add more examples to the prompt.  
+**B.** Increase Claude's reasoning effort.  
+**C.** Add execution-time precondition/version checking to the state-changing operation.  
+**D.** Make the tool description longer.  
 
 ### Correct Answer: **C**
 

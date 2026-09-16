@@ -33,10 +33,10 @@ Different runs identify very different issues. Some responses report formatting 
 
 What is the **BEST first improvement**?
 
-**A.** Increase the context window.
-**B.** Define explicit criteria for what counts as a serious problem and what should be ignored.
-**C.** Increase temperature to encourage broader analysis.
-**D.** Ask Claude to make the response longer.
+**A.** Increase the context window.  
+**B.** Define explicit criteria for what counts as a serious problem and what should be ignored.  
+**C.** Increase temperature to encourage broader analysis.  
+**D.** Ask Claude to make the response longer.  
 
 ### Correct Answer: **B**
 
@@ -105,10 +105,10 @@ However, Claude still inconsistently classifies borderline documents that contai
 
 What is the MOST useful next improvement?
 
-**A.** Repeat the same rules three times.
-**B.** Add representative few-shot examples, especially examples near category boundaries.
-**C.** Remove category definitions and let Claude infer them.
-**D.** Require longer chain-of-thought output.
+**A.** Repeat the same rules three times.  
+**B.** Add representative few-shot examples, especially examples near category boundaries.  
+**C.** Remove category definitions and let Claude infer them.  
+**D.** Require longer chain-of-thought output.  
 
 ### Correct Answer: **B**
 
@@ -180,10 +180,10 @@ Amount: $500
 
 What is the BEST architecture?
 
-**A.** Add “Please use JSON” to the prompt.
-**B.** Define a structured schema/tool interface for the required fields and validate the returned structure.
-**C.** Parse any natural-language response using regular expressions.
-**D.** Ask Claude to produce three responses and select the shortest one.
+**A.** Add “Please use JSON” to the prompt.  
+**B.** Define a structured schema/tool interface for the required fields and validate the returned structure.  
+**C.** Parse any natural-language response using regular expressions.  
+**D.** Ask Claude to produce three responses and select the shortest one.  
 
 ### Correct Answer: **B**
 
@@ -248,10 +248,10 @@ Claude has started generating plausible-looking purchase-order numbers when none
 
 What is the BEST solution?
 
-**A.** Require Claude to always produce a string because downstream systems dislike missing fields.
-**B.** Allow the field to be nullable and explicitly instruct Claude not to infer unsupported values.
-**C.** Increase temperature so generated purchase-order numbers vary more naturally.
-**D.** Remove the field from every invoice.
+**A.** Require Claude to always produce a string because downstream systems dislike missing fields.  
+**B.** Allow the field to be nullable and explicitly instruct Claude not to infer unsupported values.  
+**C.** Increase temperature so generated purchase-order numbers vary more naturally.  
+**D.** Remove the field from every invoice.  
 
 ### Correct Answer: **B**
 
@@ -324,10 +324,10 @@ The current application simply calls Claude again with the original prompt. Clau
 
 What should the application do?
 
-**A.** Retry repeatedly with the identical input until the answer changes.
-**B.** Return the specific validation failure to Claude and request a corrected extraction.
-**C.** Accept the result because all fields are valid numbers.
-**D.** Remove arithmetic validation.
+**A.** Retry repeatedly with the identical input until the answer changes.  
+**B.** Return the specific validation failure to Claude and request a corrected extraction.  
+**C.** Accept the result because all fields are valid numbers.  
+**D.** Remove arithmetic validation.  
 
 ### Correct Answer: **B**
 
@@ -405,10 +405,10 @@ The JSON is syntactically valid and matches the schema, but company policy requi
 
 What additional control is needed?
 
-**A.** No additional control; schema validation is sufficient.
-**B.** Semantic/business-rule validation after structural validation.
-**C.** A larger context window.
-**D.** Higher temperature.
+**A.** No additional control; schema validation is sufficient.  
+**B.** Semantic/business-rule validation after structural validation.  
+**C.** A larger context window.  
+**D.** Higher temperature.  
 
 ### Correct Answer: **B**
 
@@ -483,10 +483,10 @@ Requirements:
 
 Which approach is MOST appropriate?
 
-**A.** Process every document synchronously through an interactive request.
-**B.** Use asynchronous batch processing designed for high-volume, latency-tolerant workloads.
-**C.** Create one four-million-document prompt.
-**D.** Launch four million autonomous agents simultaneously.
+**A.** Process every document synchronously through an interactive request.  
+**B.** Use asynchronous batch processing designed for high-volume, latency-tolerant workloads.  
+**C.** Create one four-million-document prompt.  
+**D.** Launch four million autonomous agents simultaneously.  
 
 ### Correct Answer: **B**
 
@@ -543,10 +543,10 @@ Because the financial impact is significant, Meridian wants a second AI review t
 
 Which design is BEST?
 
-**A.** Ask the same generation context, “Are you sure?”
-**B.** Repeat the original recommendation three times and use majority voting.
-**C.** Perform an independent review with fresh context containing the evidence, decision criteria, and first-pass output as needed for critique.
-**D.** Increase the first model's confidence threshold from 80% to 95%.
+**A.** Ask the same generation context, “Are you sure?”  
+**B.** Repeat the original recommendation three times and use majority voting.  
+**C.** Perform an independent review with fresh context containing the evidence, decision criteria, and first-pass output as needed for critique.  
+**D.** Increase the first model's confidence threshold from 80% to 95%.  
 
 ### Correct Answer: **C**
 

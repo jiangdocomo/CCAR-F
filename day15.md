@@ -47,10 +47,10 @@ The coordinator currently sends `RiskAgent` the entire research transcript: 160 
 
 What is the BEST improvement?
 
-**A.** Give `RiskAgent` even more context so nothing can possibly be missing.
-**B.** Provide a task-specific context package containing the objective, relevant verified facts, applicable criteria, and references to supporting evidence.
-**C.** Give `RiskAgent` only the sentence “Analyze risk.”
-**D.** Remove all context and rely on the model's general financial knowledge.
+**A.** Give `RiskAgent` even more context so nothing can possibly be missing.  
+**B.** Provide a task-specific context package containing the objective, relevant verified facts, applicable criteria, and references to supporting evidence.  
+**C.** Give `RiskAgent` only the sentence “Analyze risk.”  
+**D.** Remove all context and rely on the model's general financial knowledge.  
 
 ### Correct Answer: **B**
 
@@ -106,10 +106,10 @@ Both input values have already been validated.
 
 Which architecture is BEST?
 
-**A.** Delegate the calculation to `FinancialAgent` and ask it to reason step by step.
-**B.** Ask three financial agents to calculate the ratio and use majority voting.
-**C.** Calculate the ratio deterministically in code or a calculation tool.
-**D.** Ask `CoordinatorAgent` to estimate the ratio from prose.
+**A.** Delegate the calculation to `FinancialAgent` and ask it to reason step by step.  
+**B.** Ask three financial agents to calculate the ratio and use majority voting.  
+**C.** Calculate the ratio deterministically in code or a calculation tool.  
+**D.** Ask `CoordinatorAgent` to estimate the ratio from prose.  
 
 ### Correct Answer: **C**
 
@@ -181,10 +181,10 @@ Claude frequently selects the wrong operation and supplies irrelevant arguments.
 
 What is the BEST redesign?
 
-**A.** Add more examples telling Claude how to populate `operation`.
-**B.** Split the overloaded capability into focused tools with distinct semantic responsibilities and narrow schemas.
-**C.** Increase the model's temperature.
-**D.** Add more optional parameters.
+**A.** Add more examples telling Claude how to populate `operation`.  
+**B.** Split the overloaded capability into focused tools with distinct semantic responsibilities and narrow schemas.  
+**C.** Increase the model's temperature.  
+**D.** Add more optional parameters.  
 
 ### Correct Answer: **B**
 
@@ -241,10 +241,10 @@ Tasks 1–3 are independent.
 
 Which TWO statements are correct?
 
-**A.** Tasks 1–3 are good candidates for parallel execution.
-**B.** Task 4 should begin before any upstream result is available.
-**C.** Task 4 should execute after the evidence required from tasks 1–3 is available.
-**D.** All four tasks should execute independently with no synchronization.
+**A.** Tasks 1–3 are good candidates for parallel execution.  
+**B.** Task 4 should begin before any upstream result is available.  
+**C.** Task 4 should execute after the evidence required from tasks 1–3 is available.  
+**D.** All four tasks should execute independently with no synchronization.  
 
 ### Correct Answers: **A and C**
 
@@ -309,10 +309,10 @@ Because the schema requires a number, Claude returns:
 
 What is the BEST fix?
 
-**A.** Keep zero because JSON requires numeric fields.
-**B.** Allow an explicit missing/null state when the source does not provide the value.
-**C.** Ask Claude to estimate debt from revenue.
-**D.** Replace structured output with unrestricted prose.
+**A.** Keep zero because JSON requires numeric fields.  
+**B.** Allow an explicit missing/null state when the source does not provide the value.  
+**C.** Ask Claude to estimate debt from revenue.  
+**D.** Replace structured output with unrestricted prose.  
 
 ### Correct Answer: **B**
 
@@ -379,10 +379,10 @@ The difference materially changes a valuation metric.
 
 What should the coordinator do?
 
-**A.** Average the values.
-**B.** Choose the larger value because it is more conservative.
-**C.** Preserve both values and provenance, apply explicit source-authority rules, and surface the conflict if it cannot be resolved.
-**D.** Ask Claude which number looks more realistic.
+**A.** Average the values.  
+**B.** Choose the larger value because it is more conservative.  
+**C.** Preserve both values and provenance, apply explicit source-authority rules, and surface the conflict if it cannot be resolved.  
+**D.** Ask Claude which number looks more realistic.  
 
 ### Correct Answer: **C**
 
@@ -440,10 +440,10 @@ The system does not know whether publication succeeded.
 
 What should happen NEXT?
 
-**A.** Immediately call `publish_report` again.
-**B.** Treat the timeout as proof that publication failed.
-**C.** Reconcile publication state or use idempotent publication semantics before retrying.
-**D.** Ask Claude to estimate the probability that publication succeeded.
+**A.** Immediately call `publish_report` again.  
+**B.** Treat the timeout as proof that publication failed.  
+**C.** Reconcile publication state or use idempotent publication semantics before retrying.  
+**D.** Ask Claude to estimate the probability that publication succeeded.  
 
 ### Correct Answer: **C**
 
@@ -515,10 +515,10 @@ High-risk cases determine whether reports require human review.
 
 Should Falcon deploy the new prompt?
 
-**A.** Yes, because overall accuracy increased.
-**B.** Yes, because routine cases are more common.
-**C.** Not based on the aggregate improvement alone; the critical high-risk regression must be addressed or explicitly accepted against operational requirements.
-**D.** Yes, if the new prompt is shorter.
+**A.** Yes, because overall accuracy increased.  
+**B.** Yes, because routine cases are more common.  
+**C.** Not based on the aggregate improvement alone; the critical high-risk regression must be addressed or explicitly accepted against operational requirements.  
+**D.** Yes, if the new prompt is shorter.  
 
 ### Correct Answer: **C**
 
@@ -579,10 +579,10 @@ Falcon allows Claude to prepare investment reports autonomously, but publishing 
 
 Which TWO controls provide the strongest layered design?
 
-**A.** Clearly instruct Claude that external publication requires approval.
-**B.** Require `publish_report` to verify valid approval at execution time.
-**C.** Allow publication whenever Claude reports confidence above 95%.
-**D.** Let retrieved documents redefine the approval policy.
+**A.** Clearly instruct Claude that external publication requires approval.  
+**B.** Require `publish_report` to verify valid approval at execution time.  
+**C.** Allow publication whenever Claude reports confidence above 95%.  
+**D.** Let retrieved documents redefine the approval policy.  
 
 ### Correct Answers: **A and B**
 
@@ -637,10 +637,10 @@ Falcon observes:
 
 Which layer MOST directly failed?
 
-**A.** Prompt engineering
-**B.** Model reasoning
-**C.** Application integration/type handling
-**D.** Context management
+**A.** Prompt engineering  
+**B.** Model reasoning  
+**C.** Application integration/type handling  
+**D.** Context management  
 
 ### Correct Answer: **C**
 
