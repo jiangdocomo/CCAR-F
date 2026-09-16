@@ -27,10 +27,10 @@ Claude requests the `search_transactions` tool. The API response has:
 
 What should the application do **NEXT**?
 
-A. End the agent loop and return Claude's current response to the customer.
-B. Execute the requested tool, append the tool result to the conversation, and call Claude again.
-C. Restart the entire conversation with the tool result as a new user message.
-D. Ask Claude whether it intended to call the tool.
+A. End the agent loop and return Claude's current response to the customer.  
+B. Execute the requested tool, append the tool result to the conversation, and call Claude again.  
+C. Restart the entire conversation with the tool result as a new user message.  
+D. Ask Claude whether it intended to call the tool.  
 
 **Correct Answer: B**
 
